@@ -73,9 +73,8 @@ item.forEach(function(btn){
         total : totalPrice,                                                                                                                                                                                                        
       }
       cartCollection.push(obj);
-      cartCollection.forEach((data,index) => {
+      cartCollection.forEach((data) => {
         console.log(data)
-        console.log(index);
         var  cartConntent = document.createElement("section");
         cartConntent.className = "cart-content";
         cartConntent = ` ${data.img}">
