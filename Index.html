@@ -15,285 +15,852 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"
         integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="Index.css">
-    <link rel="stylesheet" href="CustomerIndexCss.css">
-    <!--boostrap carousel link-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!--bootbox javascript and bootsrap dependecy-->
+    <link rel="stylesheet" href="bootstrap.min.css">
     <title>Divas Shopping </title>
 </head>
-<body>
-    </head>
 
-    <body>
-        <!--header section-->
-        <header class="header">
-            <div class="nav">
-                <a href="#"><img src="background image/Logo_500x500_px__1_-removebg-preview_1-removebg-preview.png"></a>
-                <div class="Header-content">
-                    <ul id="listFunction">
-                        <li>
-                            <a href="#" style="text-decoration:none;color:black">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
-                                    class="bi bi-person-circle" viewBox="0 0 16 16">
-                                    <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
-                                    <path fill-rule="evenodd"
-                                        d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
-                                </svg>
-                                <l class="cart" style="position: relative;left:5px"> Account </l>
-                            </a>
-                        </li>
-                        <li class="cart-show"><a href="#" style="color:black;text-decoration:none">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
-                                    class="bi bi-cart4" viewBox="0 0 16 16">
-                                    <path
-                                        d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z" />
-                                </svg>
-                                <span class="totalCart"
-                                    style="background-color:orange;border-radius:50%;padding: 0.25rem;color:white;position:relative;top:10px;right:10px;font-weight:bold">0</span>
-                                <l class="cart" style="position: relative;right:0.6rem">Cart</l></a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="nav-item">
-                    <div class="search-container">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
-                            class="bi bi-justify" viewBox="0 0 16 16" id="showIcon">
-                            <path fill-rule="evenodd"
-                                d="M2 12.5a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z" />
+<body style="background-color: #eee">
+    <!--header section-->
+    <header class="header">
+        <div class="nav">
+            <a href="#"><img src="background image/Logo_500x500_px__1_-removebg-preview_1-removebg-preview.png"></a>
+            <div class="Header-content">
+                <ul id="listFunction">
+                    <li>
+                        <a href="#" style="text-decoration:none;color:black">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                                class="bi bi-person-circle" viewBox="0 0 16 16">
+                                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                                <path fill-rule="evenodd"
+                                    d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
+                            </svg>
+                            <l class="cart" style="position: relative;left:5px"> Account </l>
+                        </a>
+                    </li>
+                    <li class="cart-show">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                            class="bi bi-basket" viewBox="0 0 16 16">
+                            <path
+                                d="M5.757 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1v4.5a2.5 2.5 0 0 1-2.5 2.5h-9A2.5 2.5 0 0 1 1 13.5V9a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h1.217L5.07 1.243a.5.5 0 0 1 .686-.172zM2 9v4.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V9H2zM1 7v1h14V7H1zm3 3a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 4 10zm2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 6 10zm2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 8 10zm2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 1 .5-.5zm2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 1 .5-.5z" />
                         </svg>
-                        <nav id="sidebar">
-                            <div>
-                                <i class="fa fa-times" aria-hidden="true" style="float:right;font-size:20px"
-                                    id="cancelIcon"></i>
-                                <!-- <img src="/background image/Logo_500x500_px__1_-removebg-preview_1-removebg-preview.png"style="position: relative;bottom:30px"> -->
-                            </div>
-                            <h4
-                                style="background-color:#FFC20B;color:white;padding:10px;position: relative;height:50px;font-weight:bold;top:48px;cursor:default;">
-                                Main menu</h4><br>
-                            <br><br>
-                            <ul>
-                                <li><a href="#"><i class="bi bi-house" style="color:#FFC20B;font-size: 16px"></i>
-                                        Home</a></li>
-                                <li><a href="#"> <i class="fa-brands fa-product-hunt" style="color:#FFC20B"></i>
-                                        Feacture product</a></li>
-                                <li><a href="#"><i class="fa fa-rss-square" aria-hidden="true"
-                                            style="color:#FFC20B"></i> Blog</a></li>
-                                <li><a href="#"><i class="bi bi-info-circle" style="color:#FFC20B"></i> FAQs</a></li>
-                                <li><a href="#"><i class="fa-regular fa-address-book" style="color:#FFC20B"></i> Contact
-                                        Us</a></li>
-                            </ul>
-                        </nav>
+                        <span class="showCart" style="background-color:#0469aa; border-radius: 50%;padding: 1px 5px;color: white;position: relative;
+                                    top: 10px;right: 22px;font-weight: bold;font-weight: 700;min-width: 18px;height: 18px; 
+                                    text-align: center;line-height: 18px;font-size: 14px">0</span>
+                        <l class="cart" style="position: relative;right:20px">Cart</l>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav-item">
+                <div class="search-container">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                        class="bi bi-justify" viewBox="0 0 16 16" id="showIcon">
+                        <path fill-rule="evenodd"
+                            d="M2 12.5a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z" />
+                    </svg>
+                    <nav id="sidebar">
+                        <div>
+                            <i class="fa fa-times" aria-hidden="true"
+                                style="float:right;font-size:20px;cursor: pointer;" id="cancelIcon"></i>
+                            <!-- <img src="/background image/Logo_500x500_px__1_-removebg-preview_1-removebg-preview.png"style="position: relative;bottom:30px"> -->
+                        </div>
+                        <h4
+                            style="background-color:#FFC20B;color:white;padding:10px;position: relative;height:50px;font-weight:bold;top:48px;cursor:default;">
+                            Our Main menu</h4><br>
+                        <br><br>
+                        <ul>
+                            <li><a href="#"><i class="bi bi-house" style="color:#FFC20B;font-size: 16px"></i>
+                                    Home</a></li>
+                            <li><a href="#"> <i class="fa-brands fa-product-hunt" style="color:#FFC20B"></i>
+                                    Feacture product</a></li>
+                            <li><a href="#"><i class="fa fa-rss-square" aria-hidden="true" style="color:#FFC20B"></i>
+                                    Blog</a></li>
+                            <li><a href="#"><i class="bi bi-info-circle" style="color:#FFC20B"></i> FAQs</a></li>
+                            <li><a href="#"><i class="fa-regular fa-address-book" style="color:#FFC20B"></i> Contact
+                                    Us</a></li>
+                        </ul>
+                    </nav>
+                    <form class="search">
+                        <div class="search-content">
+                            <select name="" class="searchdetails">
+                                <option selected="selected">All</option>
+                                <option>Best seller</option>
+                                <option>New Arival</option>
+                            </select>
 
-                        <form class="search">
-                            <div class="search-content">
-                                <select name="" class="searchdetails">
-                                    <option selected="selected">All</option>
-                                    <option>Best seller</option>
-                                    <option>New Arival</option>
-                                </select>
-
-                                <input type="text" class="inputsearch" placeholder="Search for product and more.."
-                                    autocomplete="off" id="searchInput">
-                                <button class="inputsearchbtn" onclick="searchFunction()">
-                                    <i class="fa fa-search"></i>
-                                    <span class="search-text">Search</span>
-                                </button>
-                            </div>
-                        </form>
-                    </div>
+                            <input type="text" class="inputsearch" placeholder="Search for product and more.."
+                                autocomplete="off" id="searchInput">
+                            <button class="inputsearchbtn">
+                                <i class="fa fa-search"></i>
+                                <span class="search-text" style="font-weight:bold">Search</span>
+                            </button>
+                        </div>
+                    </form>
                 </div>
             </div>
-        </header>
-        <!-- <section class="cart-content">
-            <img src="/design image/men shirt 2.png">
-            <div class="cart-summary">
-                <p>Men black shirt</p>
-                 <p>Quality : 1</p>
-                 <p>Price :<i class="fa-solid fa-naira-sign"></i>14,000.00</p>
-                 <h4>Total:<i class="fa-solid fa-naira-sign"></i> 14,000.00</h4>
-                 <button class="btn btn-sucesss">Checkout</button>
-            </div>
-          
-
         </div>
-    </section> -->
-
         <!--nav bar link-->
         <section class="navbar">
             <div class="navbar-link">
                 <ul>
-                    <li><a href="Home">Home</a></li>
-                    <li><a href="featureProduct">Feature Product</a></li>
-                    <li><a href="Blog">Blog</a></li>
-                    <li><a href="FAQ">FAQ</a></li>
-                    <li><a href="Contact">Contact</a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#top">Top Deal</a></li>
+                    <li><a href="#recommended">Recomedation</a></li>
+                    <li><a href="#Topsellers">Top best Seller</a></li>
+                    <li><a href="#Contact">Contact us</a></li>
+                    <li><a href="#Contact">Contact Ceo</a></li>
                 </ul>
                 </nav>
-
         </section>
-        <!-- Background-image site-->
-        <section class="background-image-site">
-            <div class="slide">
-                <div class="sildeimage">
-                    <img src="background image/IMG-20220802-WA0023.jpg">
-                </div>
+    </header>
+   
+    <div class="background-overly"></div>
+    <section class="cart-container">
+        <div class="cart-display">
+            <div class="cart-heading">
+                <h5>Shopping Cart</h5>
+                <a href="#" id="closeCart">Close <i class="bi bi-arrow-right"></i></a>
+              </div>
+              <hr>
+              <!-- <p>No item has been added to cart</p> -->
+              <div class="all-cart-item">
+                <p class="cart-message">NO item has been added to cart</p>
+                <!-- <div class="row">
+                    <img src="/design image/Men shirt.png">
+                    <div>
+                        <p style="font-weight: 500">Stock Blue Strip Shirt</p>
+                        <p style="position: relative;bottom:10px">status - 1 item</p>
+                    </div>
+                    <div style="position: relative;left:10px">
+                        <input type="number" id="quantity" name="quantity" min="1" max="1000"value="1">
+                        <h5 class="totalPrice">₦14,000.00</h5>
+                    </div>
+                    <div>
+                        <i class="bi bi-x-lg"></i>
+                    </div>
+                </div> -->
+             </div>
+             <hr>
+             <div class="total"style="display:flex;justify-content:space-between;margin:30px">
+                 <h6 style="font-size:16px;font-weight: bold;">Total</h6>
+                 <h5>₦0</h5>
+             </div>
+             <div class="cart-footer">
+              <button type="button"class="update">View Cart</button>
+              <button type="button"class="checkout">Checkout</button>
+             </div>
+              
+           </div>
+        </div>
+    </section>
 
-                <div class="sildeimage">
-                    <img
-                        src="background image/modern-person-carrying-shopping-bags-using-smartphone-after-making-purchase-sale-retail-store-millennial-adult-holding-paper-bags-feeling-excited-about-discount-shop_482257-39433.jpg">
-                </div>
+    <!-- Background-image site
+    <section class="background-image-site">
+        <div class="slide">
+            <div class="sildeimage">
+                <img src="background image/IMG-20220802-WA0023.jpg">
+            </div>
+            <div class="sildeimage">
+                <img
+                    src="background image/modern-person-carrying-shopping-bags-using-smartphone-after-making-purchase-sale-retail-store-millennial-adult-holding-paper-bags-feeling-excited-about-discount-shop_482257-39433.jpg">
+            </div>
 
-                <div class="sildeimage">
-                    <img src="background image/IMG-20220802-WA0021.jpg">
-                </div>
+            <div class="sildeimage">
+                <img src="background image/IMG-20220802-WA0021.jpg">
             </div>
-            <div class="prev-icon">
-                <i class="fa-solid fa-angle-left" id="prev-icon" onclick="setslide(-1)"></i>
+        </div>
+        <div class="prev-icon">
+            <i class="fa-solid fa-angle-left" id="prev-icon" onclick="setslide(-1)"></i>
 
-            </div>
-            <div class="prev-icon">
-                <i class="fa-solid fa-angle-right" id="next-icon" onclick="setslide(1)"></i>
-            </div>
-            </div>
-        </section>
-        <section class="site-content">
-            <h3>NEW COLLECTION</h3>
-            <div class="border-line"></div>
-            <div class="site-action">
-                <ul>
-                    <li class="active">ALL</li>
-                    <li>Best seller</li>
-                    <li>New Arrival</li>
-                </ul>
-            </div>
-        </section>
-        <!--All content of site-content-->
-        <br><br>
-        <section class="All-content">
-            <div class="card text-white"style="  background-color: #FFFFFF;box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);width:90%;margin:auto;padding:10px">
-              <div class="card-body">
-                <h4  style="background-color:#FFC20B;height:auto;padding:20px;font-family: 'Inter';
+        </div>
+        <div class="prev-icon">
+            <i class="fa-solid fa-angle-right" id="next-icon" onclick="setslide(1)"></i>
+        </div>
+        </div>
+    </section> -->
+    <!-- <section class="site-content">
+        <h3>NEW COLLECTION</h3>
+        <div class="border-line"></div>
+        <div class="site-action">
+            <ul>
+                <li class="active">ALL</li>
+                <li>Best seller</li>
+                <li>New Arrival</li>
+            </ul>
+        </div>
+    </section>
+    <--All content of site-content-->
+    <br><br>
+    <section class="All-content">
+        <div class="card text-white" style="  background-color: #FFFFFF;margin:auto;padding:10px" id="all-content-card">
+            <div class="card-body">
+                <h4 style="background-color:#009ea887;height:auto;padding:20px;font-family: 'Inter';
                 font-style: normal;
                 font-weight: 700;
                 font-size: 18px;
-                line-height: 10px;">Men's Shirt | collection</h4>
-               <div class="All-item"style="display:flex;justify-content:space-around;flex-wrap:wrap">
-                <div class="item"style="width:190px">
-                    <img src="design image/Men shirt.png">
-                    <div style="margin-top:10px"class="item-content">
-                        <p style="font-size:16px"class="productName"> Stock Blue Strip Shirt</p>
-                        <span style="display:flex;justify-content:space-between">
-                            <p style="font-size:18px;font-weight:bold"class="productPrice">₦14,000.00</p>
-                            <p style="font-size:13px;font-family:'Arial';font-style: normal;text-decoration-line: line-through;color: #988E8E;position: relative;right:40px;top:3px">₦28,000</p>
-                        </span>
-                        <i class="fa-solid fa-star"style="color:#F3CF11"></i>
-                        <i class="fa-solid fa-star"style="color:#F3CF11"></i>
-                        <i class="fa-solid fa-star"style="color:#F3CF11"></i>
-                        <i class="fa-solid fa-star"style="color:#F3CF11"></i>
-                        <i class="bi bi-star"></i> 
-                    </div><br>
-                   <button id="AddCartFunction"class="btn btn-primary  AddCartFunction"><i class="bi bi-bag"></i> Add Chart</button>
+                line-height: 10px;color:white">Men's Shirt | collection</h4>
+                <div class="All-item" style="display:flex;justify-content:space-around;flex-wrap:wrap">
+                    <div class="item" style="width:190px">
+                        <img src="design image/Men shirt.png">
+                        <div style="margin-top:10px" class="item-content">
+                            <p style="font-size:16px" class="productName"> Stock Blue Strip Shirt</p>
+                            <span style="display:flex;justify-content:space-between">
+                                <p style="font-size:18px;font-weight:bold" class="productPrice">₦14,000.00</p>
+                                <p
+                                    style="font-size:13px;font-style: normal;text-decoration-line: line-through;color:#988E8E;position: relative;right:20px;top:3px">
+                                    ₦28,000</p>
+                            </span>
+                            <i class="fa-solid fa-star" style="color:#F3CF11"></i>
+                            <i class="fa-solid fa-star" style="color:#F3CF11"></i>
+                            <i class="fa-solid fa-star" style="color:#F3CF11"></i>
+                            <i class="fa-solid fa-star" style="color:#F3CF11"></i>
+                            <i class="bi bi-star"></i>
+                            <button id="AddCartFunction" class="btn btn-primary  AddCartFunction"
+                                style="margin-top:18px"><i class="bi bi-bag"></i> Add Chart</button>
+                        </div>
 
-                </div>
-                <div class="item"style="width:190px">
-                    <img src="design image/men shirt 2.png">
-                    <div style="margin-top:10px"id="item-content">
-                        <p style="font-size:16px"class="productName"> Stock Black shirt</p>
-                        <span style="display:flex;justify-content:space-between">
-                            <p style="font-size:18px;font-weight:bold"class="productPrice">₦10,000.00</p>
-                            <p style="font-size:13px;font-family:'Arial';font-style: normal;text-decoration-line: line-through;color: #988E8E;position: relative;right:40px;top:3px;">₦20,000</p>
-                        </span>
-                        <i class="fa-solid fa-star"style="color:#F3CF11"></i>
-                        <i class="fa-solid fa-star"style="color:#F3CF11"></i>
-                        <i class="fa-solid fa-star"style="color:#F3CF11"></i>
-                        <i class="fa-solid fa-star"style="color:#F3CF11"></i>
-                        <i class="bi bi-star"></i> 
-                    </div><br>
-                   <button  class="btn btn-primary  AddCartFunction"><i class="bi bi-bag"></i> Add Chart</button>
 
-                   
-                </div>
+                    </div>
+                    <div class="item" style="width:190px">
+                        <img src="design image/men shirt 2.png">
+                        <div style="margin-top:10px" id="item-content">
+                            <p style="font-size:16px" class="productName"> Stock Mens Black Shirt</p>
+                            <span style="display:flex;justify-content:space-between">
+                                <p style="font-size:18px;font-weight:bold" class="productPrice">₦10,000.00</p>
+                                <p
+                                    style="font-size:13px;font-family:'Arial';font-style: normal;text-decoration-line: line-through;color: #988E8E;position: relative;right:40px;top:3px;">
+                                    ₦20,000</p>
+                            </span>
+                            <i class="fa-solid fa-star" style="color:#F3CF11"></i>
+                            <i class="fa-solid fa-star" style="color:#F3CF11"></i>
+                            <i class="fa-solid fa-star" style="color:#F3CF11"></i>
+                            <i class="fa-solid fa-star" style="color:#F3CF11"></i>
+                            <i class="bi bi-star"></i>
+                            <button id="AddCartFunction" class="btn btn-primary  AddCartFunction"
+                                style="margin-top:18px"><i class="bi bi-bag"></i> Add Chart</button>
+                        </div>
 
-                <div class="item"style="width:190px">
-                    <img src="design image/Men shirt 3 (2).png">
-                    <div style="margin-top:10px"id="item-content">
-                        <p style="font-size:16px"class="productName"> Stock vintage shirt</p>
-                        <span style="display:flex;justify-content:space-between">
-                            <p style="font-size:18px;font-weight:bold"class="productPrice">₦8,000.00</p>
-                            <p style="font-size:13px;font-family:'Arial';font-style: normal;text-decoration-line: line-through;color: #988E8E;position: relative;right:40px;top:3px">₦16,000</p>
-                        </span>
-                        <i class="fa-solid fa-star"style="color:#F3CF11"></i>
-                        <i class="fa-solid fa-star"style="color:#F3CF11"></i>
-                        <i class="fa-solid fa-star"style="color:#F3CF11"></i>
-                        <i class="fa-solid fa-star"style="color:#F3CF11"></i>
-                        <i class="bi bi-star"></i> 
-                    </div><br>
-                   <button id="AddCartFunction"class="btn btn-primary  AddCartFunction"><i class="bi bi-bag"></i> Add Chart</button>
-                </div>
-                     
-                <div class="item"style="width:190px">
-                    <img src="design image/men shirt 4.png">
-                    <div style="margin-top:10px"id="item-content">
-                        <p style="font-size:16px"class="productName">Men jean shirt</p>
-                        <span style="display:flex;justify-content:space-between">
-                            <p style="font-size:18px;font-weight:bold"class="productPrice">₦6,000.00</p>
-                            <p style="font-size:13px;font-family:'Arial';font-style: normal;text-decoration-line: line-through;color: #988E8E;position: relative;right:40px;top:3px;">₦12,0000</p>
-                        </span>
-                        <i class="fa-solid fa-star"style="color:#F3CF11"></i>
-                        <i class="fa-solid fa-star"style="color:#F3CF11"></i>
-                        <i class="fa-solid fa-star"style="color:#F3CF11"></i>
-                        <i class="fa-solid fa-star"style="color:#F3CF11"></i>
-                        <i class="bi bi-star"></i> 
-                    </div><br>
-                   <button id="AddCartFunction"class="btn btn-primary  AddCartFunction"><i class="bi bi-bag"></i> Add Chart</button>
-                </div>
 
-                <div class="item"style="width:190px">
-                    <img src="design image/cotton mens stykish check shirt.png"id="img">
-                    <div style="margin-top:10px"id="item-content">
-                        <p style="font-size:16px"class="productName">cotton stylelish check shirt</p>
-                        <span style="display:flex;justify-content:space-between">
-                            <p style="font-size:18px;font-weight:bold"class="productPrice">₦7,000.00</p>
-                            <p style="font-size:13px;font-family:'Arial';font-style: normal;text-decoration-line: line-through;color: #988E8E;position: relative;right:40px;top:3px;">₦14,000</p>
-                        </span>
-                        <i class="fa-solid fa-star"style="color:#F3CF11"></i>
-                        <i class="fa-solid fa-star"style="color:#F3CF11"></i>
-                        <i class="fa-solid fa-star"style="color:#F3CF11"></i>
-                        <i class="fa-solid fa-star"style="color:#F3CF11"></i>
-                        <i class="bi bi-star"></i> 
-                    </div><br>
-                   <button class="btn btn-primary AddCartFunction"><i class="bi bi-bag"></i> Add Chart</button>
-                </div>
-                <div class="item"style="width:190px"id="item-content">
-                    <img src="design image/Men shirt 3 (2).png">
-                    <div style="margin-top:10px">
-                        <p style="font-size:16px"class="productName"> Stock vintage shirt</p>
-                        <span style="display:flex;justify-content:space-between">
-                            <p style="font-size:18px;font-weight:bold"class="productPrice">₦16,000.00</p>
-                            <p style="font-size:13px;font-family:'Arial';font-style: normal;text-decoration-line: line-through;color: #988E8E;position: relative;right:40px;top:3px;">₦8000</p>
-                        </span>
-                        <i class="fa-solid fa-star"style="color:#F3CF11"></i>
-                        <i class="fa-solid fa-star"style="color:#F3CF11"></i>
-                        <i class="fa-solid fa-star"style="color:#F3CF11"></i>
-                        <i class="fa-solid fa-star"style="color:#F3CF11"></i>
-                        <i class="bi bi-star"></i> 
-                    </div><br>
-                   <button id="AddCartFunction"class="btn btn-primary  AddCartFunction"><i class="bi bi-bag"></i> Add Chart</button>
-                </div>
+                    </div>
+                    <div class="item" style="width:190px">
+                        <img src="design image/Men shirt 3 (2).png">
+                        <div style="margin-top:10px" id="item-content">
+                            <p style="font-size:16px" class="productName"> Stock Mens Vintage Shirt</p>
+                            <span style="display:flex;justify-content:space-between">
+                                <p style="font-size:18px;font-weight:bold" class="productPrice">₦8,000.00</p>
+                                <p
+                                    style="font-size:13px;font-family:'Arial';font-style: normal;text-decoration-line: line-through;color: #988E8E;position: relative;right:40px;top:3px">
+                                    ₦16,000</p>
+                            </span>
+                            <i class="fa-solid fa-star" style="color:#F3CF11"></i>
+                            <i class="fa-solid fa-star" style="color:#F3CF11"></i>
+                            <i class="fa-solid fa-star" style="color:#F3CF11"></i>
+                            <i class="fa-solid fa-star" style="color:#F3CF11"></i>
+                            <i class="bi bi-star"></i>
+                            <button id="AddCartFunction" class="btn btn-primary  AddCartFunction"
+                                style="margin-top:18px"><i class="bi bi-bag"></i> Add Chart</button>
+                        </div>
 
-               </div>
-              </div>
+                    </div>
+                    <div class="item" style="width:190px">
+                        <img src="design image/men shirt 4.png">
+                        <div style="margin-top:10px" id="item-content">
+                            <p style="font-size:16px" class="productName">Mens fitted Jean Shirt</p>
+                            <span style="display:flex;justify-content:space-between">
+                                <p style="font-size:18px;font-weight:bold" class="productPrice">₦6,000.00</p>
+                                <p
+                                    style="font-size:13px;font-family:'Arial';font-style: normal;text-decoration-line: line-through;color: #988E8E;position: relative;right:40px;top:3px;">
+                                    ₦12,0000</p>
+                            </span>
+                            <i class="fa-solid fa-star" style="color:#F3CF11"></i>
+                            <i class="fa-solid fa-star" style="color:#F3CF11"></i>
+                            <i class="fa-solid fa-star" style="color:#F3CF11"></i>
+                            <i class="fa-solid fa-star" style="color:#F3CF11"></i>
+                            <i class="bi bi-star"></i>
+                            <button id="AddCartFunction" class="btn btn-primary  AddCartFunction"
+                                style="margin-top:18px"><i class="bi bi-bag"></i> Add Chart</button>
+                        </div>
+
+                    </div>
+
+                    <div class="item" style="width:190px">
+                        <img src="design image/cotton mens stykish check shirt.png" id="img">
+                        <div style="margin-top:10px" id="item-content">
+                            <p style="font-size:16px" class="productName">Cotton-Style Check Shirt</p>
+                            <span style="display:flex;justify-content:space-between">
+                                <p style="font-size:18px;font-weight:bold" class="productPrice">₦7,000.00</p>
+                                <p
+                                    style="font-size:13px;font-family:'Arial';font-style: normal;text-decoration-line: line-through;color: #988E8E;position: relative;right:40px;top:3px;">
+                                    ₦14,000</p>
+                            </span>
+                            <i class="fa-solid fa-star" style="color:#F3CF11"></i>
+                            <i class="fa-solid fa-star" style="color:#F3CF11"></i>
+                            <i class="fa-solid fa-star" style="color:#F3CF11"></i>
+                            <i class="fa-solid fa-star" style="color:#F3CF11"></i>
+                            <i class="bi bi-star"></i>
+                            <button id="AddCartFunction" class="btn btn-primary  AddCartFunction"
+                                style="margin-top:18px"><i class="bi bi-bag"></i> Add Chart</button>
+                        </div>
+
+                    </div>
+                </div>
             </div>
-              </div>
-            </div>
-        </section>
+        </div>
+        </div>
+    </section>
+    <section id="top" style="position: relative;top:40px">
+        <div class="card text-white" style="  background-color: #FFFFFF;margin:auto" id="top-deal-content">
+            <div class="card-body">
+                <h4 style="background-color:#CAB0B6;height:auto;padding:20px;
+              font-style: normal;
+              font-weight: 700;
+              font-size: 18px;
+              line-height: 10px;color:white">Top Deal | Fashion </h4>
+                <div class="All-item" style="display:flex;justify-content:space-around;flex-wrap:wrap">
+                    <div class="item" style="width:190px">
+                        <img src="design image/black men sneakers.png">
+                        <div style="margin-top:10px" class="item-content">
+                            <p style="font-size:16px" class="productName"> Mens Black Sneakers Shoe</p>
+                            <span style="display:flex;justify-content:space-between">
+                                <p style="font-size:18px;font-weight:bold" class="productPrice">₦11,600</p>
+                                <p
+                                    style="font-size:13px;font-family:'Arial';font-style: normal;text-decoration-line: line-through;color:#988E8E;position: relative;right:40px;top:3px">
+                                    ₦20,000</p>
+                            </span>
+                            <i class="fa-solid fa-star" style="color:#F3CF11"></i>
+                            <i class="fa-solid fa-star" style="color:#F3CF11"></i>
+                            <i class="fa-solid fa-star" style="color:#F3CF11"></i>
+                            <i class="fa-solid fa-star" style="color:#F3CF11"></i>
+                            <i class="bi bi-star"></i>
+                            <button id="AddCartFunction" class="btn btn-primary  AddCartFunction"
+                                style="margin-top:18px"><i class="bi bi-bag"></i> Add Chart</button>
+                        </div>
 
-        <script src="index.js"></script>
-        <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> -->
-        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    </body>
+
+                    </div>
+                    <div class="item" style="width:190px">
+                        <img src="design image/shoe.png">
+                        <div style="margin-top:10px" id="item-content">
+                            <p style="font-size:16px" class="productName">Mens Black Leather Shoe</p>
+                            <span style="display:flex;justify-content:space-between">
+                                <p style="font-size:18px;font-weight:bold" class="productPrice">₦18,000.00</p>
+                                <p
+                                    style="font-size:13px;font-family:'Arial';font-style: normal;text-decoration-line: line-through;color: #988E8E;position: relative;right:40px;top:3px;">
+                                    ₦40,000</p>
+                            </span>
+                            <i class="fa-solid fa-star" style="color:#F3CF11"></i>
+                            <i class="fa-solid fa-star" style="color:#F3CF11"></i>
+                            <i class="fa-solid fa-star" style="color:#F3CF11"></i>
+                            <i class="fa-solid fa-star" style="color:#F3CF11"></i>
+                            <i class="bi bi-star"></i>
+                            <button id="AddCartFunction" class="btn btn-primary  AddCartFunction"
+                                style="margin-top:18px"><i class="bi bi-bag"></i> Add Chart</button>
+                        </div>
+
+                    </div>
+                    <div class="item" style="width:190px">
+                        <img src="design image/jack.png">
+                        <div style="margin-top:10px" id="item-content">
+                            <p style="font-size:16px" class="productName">Mens Casual Jacket Wear</p>
+                            <span style="display:flex;justify-content:space-between">
+                                <p style="font-size:18px;font-weight:bold" class="productPrice">₦11,100.00</p>
+                                <p
+                                    style="font-size:13px;font-family:'Arial';font-style: normal;text-decoration-line: line-through;color: #988E8E;position: relative;right:40px;top:3px">
+                                    ₦15,000</p>
+                            </span>
+                            <i class="fa-solid fa-star" style="color:#F3CF11"></i>
+                            <i class="fa-solid fa-star" style="color:#F3CF11"></i>
+                            <i class="fa-solid fa-star" style="color:#F3CF11"></i>
+                            <i class="fa-solid fa-star" style="color:#F3CF11"></i>
+                            <i class="bi bi-star"></i>
+                            <button id="AddCartFunction" class="btn btn-primary  AddCartFunction"
+                                style="margin-top:18px"><i class="bi bi-bag"></i> Add Chart</button>
+                        </div>
+
+                    </div>
+                    <div class="item" style="width:190px">
+                        <img src="design image/wrist watch.png">
+                        <div style="margin-top:10px" id="item-content">
+                            <p style="font-size:16px" class="productName">Mens Leather Wrist Watch</p>
+                            <span style="display:flex;justify-content:space-between">
+                                <p style="font-size:18px;font-weight:bold" class="productPrice">₦11,100.00</p>
+                                <p
+                                    style="font-size:13px;font-family:'Arial';font-style: normal;text-decoration-line: line-through;color: #988E8E;position: relative;right:40px;top:3px;">
+                                    ₦15,0000</p>
+                            </span>
+                            <i class="fa-solid fa-star" style="color:#F3CF11"></i>
+                            <i class="fa-solid fa-star" style="color:#F3CF11"></i>
+                            <i class="fa-solid fa-star" style="color:#F3CF11"></i>
+                            <i class="fa-solid fa-star" style="color:#F3CF11"></i>
+                            <i class="bi bi-star"></i>
+                            <button id="AddCartFunction" class="btn btn-primary  AddCartFunction"
+                                style="margin-top:18px"><i class="bi bi-bag"></i> Add Chart</button>
+                        </div>
+
+                    </div>
+
+                    <div class="item" style="width:190px">
+                        <img src="design image/Trouser.png" id="img">
+                        <div style="margin-top:10px" id="item-content">
+                            <p style="font-size:16px" class="productName">Straight Jeans Men's Pant </p>
+                            <span style="display:flex;justify-content:space-between">
+                                <p style="font-size:18px;font-weight:bold" class="productPrice">₦11,100.00</p>
+                                <p
+                                    style="font-size:13px;font-family:'Arial';font-style: normal;text-decoration-line: line-through;color: #988E8E;position: relative;right:40px;top:3px;">
+                                    ₦15,000</p>
+                            </span>
+                            <i class="fa-solid fa-star" style="color:#F3CF11"></i>
+                            <i class="fa-solid fa-star" style="color:#F3CF11"></i>
+                            <i class="fa-solid fa-star" style="color:#F3CF11"></i>
+                            <i class="fa-solid fa-star" style="color:#F3CF11"></i>
+                            <i class="bi bi-star"></i>
+                            <button id="AddCartFunction" class="btn btn-primary  AddCartFunction"
+                                style="margin-top:18px"><i class="bi bi-bag"></i> Add Chart</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <section class="call-action">
+        <div class="call-action-header">
+            <h3></h3>
+            <img src="background image/calltoaction2.png"
+                style="width:97%;height:auto;margin:auto;display:block;margin-top:50px;border: 1px solid white; background: white; padding: 5px;">
+        </div>
+    </section>
+    <section class="recommended" id="recommended">
+        <div class="recommeded-content">
+            <div class="card" id="recommdation-background">
+                <h2>RECOMENDED FOR YOU </h2>
+                <div class="all-recommend-item">
+                    <div class="recommend-item" id="recommenditem1">
+                        <picture>
+                            <img src="design image/flat heel casual shoe.jpg">
+                        </picture>
+
+                        <div style="margin-top:10px" id="recommed-item-content">
+                            <p class="productName">Mens Jeans Sneaker Shoe</p>
+                            <span style="display:flex">
+                                <p class="productPrice">₦10,100.00
+                                </p>
+                                <p
+                                    style="font-size:14px;font-family:'Arial';font-style: normal;text-decoration-line: line-through;color:#988E8E;position: relative;left: 30px;">
+                                    ₦13,000.00</p>
+                            </span>
+                            <p>
+                                <strong><i class="fa-solid fa-star" style="color:#F3CF11"></i></strong>
+                                <strong><i class="fa-solid fa-star" style="color:#F3CF11"></i></strong>
+                                <strong><i class="fa-solid fa-star" style="color:#F3CF11"></i></strong>
+                                <strong><i class="fa-solid fa-star" style="color:#F3CF11"></i></strong>
+                                <strong><i class="bi bi-star"></i></strong>
+                            </p>
+                            <button id="AddCartFunction" class="btn btn-primary  AddCartFunction"><i
+                                    class="bi bi-bag"></i> Add Chart</button>
+                        </div>
+
+                    </div>
+
+
+                    <div class="recommend-item" id="recommenditem3">
+                        <picture>
+                            <img src="background image/cool men shoe.jpg">
+                        </picture>
+
+                        <div style="margin-top:10px" id="recommed-item-content">
+                            <p class="productName">Mens Black Fitted Shoe</p>
+                            <span style="display:flex">
+                                <p class="productPrice">₦25,100.00
+                                </p>
+                                <p
+                                    style="font-size:14px;font-family:'Arial';font-style: normal;text-decoration-line: line-through;color: #988E8E;position: relative;left:30px">
+                                    ₦30,000.00</p>
+                            </span>
+                            <p>
+                                <strong><i class="fa-solid fa-star" style="color:#F3CF11"></i></strong>
+                                <strong><i class="fa-solid fa-star" style="color:#F3CF11"></i></strong>
+                                <strong><i class="fa-solid fa-star" style="color:#F3CF11"></i></strong>
+                                <strong><i class="fa-solid fa-star" style="color:#F3CF11"></i></strong>
+                                <strong><i class="bi bi-star"></i></strong>
+                            </p>
+                            <button id="AddCartFunction" class="btn btn-primary  AddCartFunction"><i
+                                    class="bi bi-bag"></i> Add Chart</button>
+                        </div>
+
+                    </div>
+                    <div class="recommend-item" id="recommenditem4">
+                        <picture>
+                            <img src="background image/men tshirt.jpg">
+                        </picture>
+
+                        <div style="margin-top:10px" id="recommed-item-content">
+                            <p class="productName">Plain Mens Stock T-shirt </p>
+                            <span style="display:flex">
+                                <p class="productPrice">₦8,100.00 </p>
+                                <p
+                                    style="font-size:14px;font-style: normal;text-decoration-line: line-through;color: #988E8E;position: relative;left:30px">
+                                    ₦4000.00</p>
+                            </span>
+                            <p>
+                                <strong><i class="fa-solid fa-star" style="color:#F3CF11"></i></strong>
+                                <strong><i class="fa-solid fa-star" style="color:#F3CF11"></i></strong>
+                                <strong><i class="fa-solid fa-star" style="color:#F3CF11"></i></strong>
+                                <strong><i class="fa-solid fa-star" style="color:#F3CF11"></i></strong>
+                                <strong><i class="bi bi-star"></i></strong>
+                            </p>
+                            <button id="AddCartFunction" class="btn btn-primary  AddCartFunction"><i
+                                    class="bi bi-bag"></i> Add Chart</button>
+                        </div>
+
+                    </div>
+                    <div class="recommend-item" id="recommenditem5">
+                        <picture>
+                            <img src="design image/winter jacket.jpg">
+                        </picture>
+
+                        <div style="margin-top:10px" id="recommed-item-content">
+                            <p class="productName">Mens Winter Jean jacket</p>
+                            <span style="display:flex">
+                                <p class="productPrice">₦8,100.00
+                                </p>
+                                <p
+                                    style="font-size:14px;font-family:'Arial';font-style: normal;text-decoration-line: line-through;color: #988E8E;position: relative;left:30px">
+                                    ₦4000.00</p>
+                            </span>
+                            <p>
+                                <strong><i class="fa-solid fa-star" style="color:#F3CF11"></i></strong>
+                                <strong><i class="fa-solid fa-star" style="color:#F3CF11"></i></strong>
+                                <strong><i class="fa-solid fa-star" style="color:#F3CF11"></i></strong>
+                                <strong><i class="fa-solid fa-star" style="color:#F3CF11"></i></strong>
+                                <strong><i class="bi bi-star"></i></strong>
+                            </p>
+                            <button id="AddCartFunction" class="btn btn-primary  AddCartFunction"><i
+                                    class="bi bi-bag"></i> Add Chart</button>
+                        </div>
+                    </div>
+                    <div class="recommend-item" id="recommenditem6">
+                        <picture>
+                            <img src="design image/black men polo.png">
+                        </picture>
+                        <div style="margin-top:10px" id="recommed-item-content">
+                            <p class="productName">Mens Black Stock Tshirt </p>
+                            <span style="display:flex">
+                                <p class="productPrice">₦8,100.00
+                                </p>
+                                <p
+                                    style="font-size:14px;font-family:'Arial';font-style: normal;text-decoration-line: line-through;color: #988E8E;position: relative;left:30px">
+                                    ₦4000.00</p>
+                            </span>
+                            <p>
+                                <strong><i class="fa-solid fa-star" style="color:#F3CF11"></i></strong>
+                                <strong><i class="fa-solid fa-star" style="color:#F3CF11"></i></strong>
+                                <strong><i class="fa-solid fa-star" style="color:#F3CF11"></i></strong>
+                                <strong><i class="fa-solid fa-star" style="color:#F3CF11"></i></strong>
+                                <strong><i class="bi bi-star"></i></strong>
+                            </p>
+                            <button id="AddCartFunction" class="btn btn-primary  AddCartFunction"><i
+                                    class="bi bi-bag"></i> Add Chart</button>
+                        </div>
+
+                    </div>
+                    <div class="recommend-item" id="recommenditem7">
+                        <picture>
+                            <img src="design image/orange polo.png">
+                        </picture>
+                        <div style="margin-top:10px" id="recommed-item-content">
+                            <p class="productName">Mens Stock Tshirt</p>
+                            <span style="display:flex">
+                                <p class="productPrice">₦8,100.00
+                                </p>
+                                <p
+                                    style="font-size:14px;font-family:'Arial';font-style: normal;text-decoration-line: line-through;color: #988E8E;position: relative;left:30px">
+                                    ₦4000.00</p>
+                            </span>
+                            <p>
+                                <strong><i class="fa-solid fa-star" style="color:#F3CF11"></i></strong>
+                                <strong><i class="fa-solid fa-star" style="color:#F3CF11"></i></strong>
+                                <strong><i class="fa-solid fa-star" style="color:#F3CF11"></i></strong>
+                                <strong><i class="fa-solid fa-star" style="color:#F3CF11"></i></strong>
+                                <strong><i class="bi bi-star"></i></strong>
+                            </p>
+                            <button id="AddCartFunction" class="btn btn-primary  AddCartFunction"><i
+                                    class="bi bi-bag"></i> Add Chart</button>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="Topsellers" id="Topsellers">
+        <div class="TopSeller-content">
+            <div class="card" id="Topseller-background">
+                <h2>TOP BEST SELLER </h2>
+                <div class="card-body">
+                    <div class="all-Seller-item">
+                        <div class="sellers-item" id="recommenditem1">
+                            <picture>
+                                <img src="design image/men loafers leather oxford shoe.jpeg">
+                            </picture>
+
+                            <div style="margin-top:10px" id="sellers-item-content">
+                                <p class="productName">Mens Jeans Sneaker Shoe</p>
+                                <span style="display:flex">
+                                    <p class="productPrice">₦10,100.00
+                                    </p>
+                                    <p
+                                        style="font-size:14px;font-family:'Arial';font-style: normal;text-decoration-line: line-through;color:#988E8E;position: relative;left: 30px;">
+                                        ₦13,000.00</p>
+                                </span>
+                                <p>
+                                    <strong><i class="fa-solid fa-star" style="color:#F3CF11"></i></strong>
+                                    <strong><i class="fa-solid fa-star" style="color:#F3CF11"></i></strong>
+                                    <strong><i class="fa-solid fa-star" style="color:#F3CF11"></i></strong>
+                                    <strong><i class="fa-solid fa-star" style="color:#F3CF11"></i></strong>
+                                    <strong><i class="bi bi-star"></i></strong>
+                                </p>
+                                <button id="AddCartFunction" class="btn btn-primary  AddCartFunction"><i
+                                        class="bi bi-bag"></i> Add Chart</button>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="sellers-item" id="recommenditem3">
+                            <picture>
+                                <img src="design image/men casual biker jean.jpg">
+                            </picture>
+
+                            <div style="margin-top:10px" id="sellers-item-content">
+                                <p class="productName">Mens Black Fitted Shoe</p>
+                                <span style="display:flex">
+                                    <p class="productPrice">₦25,100.00
+                                    </p>
+                                    <p
+                                        style="font-size:14px;font-family:'Arial';font-style: normal;text-decoration-line: line-through;color: #988E8E;position: relative;left:30px">
+                                        ₦30,000.00</p>
+                                </span>
+                                <p>
+                                    <strong><i class="fa-solid fa-star" style="color:#F3CF11"></i></strong>
+                                    <strong><i class="fa-solid fa-star" style="color:#F3CF11"></i></strong>
+                                    <strong><i class="fa-solid fa-star" style="color:#F3CF11"></i></strong>
+                                    <strong><i class="fa-solid fa-star" style="color:#F3CF11"></i></strong>
+                                    <strong><i class="bi bi-star"></i></strong>
+                                </p>
+                                <button id="AddCartFunction" class="btn btn-primary  AddCartFunction"><i
+                                        class="bi bi-bag"></i> Add Chart</button>
+                            </div>
+
+                        </div>
+                        <div class="sellers-item" id="recommenditem4">
+                            <picture>
+                                <img src="/design image/mens versace t-shirt.jpg">
+                            </picture>
+
+                            <div style="margin-top:10px" id="sellers-item-content">
+                                <p class="productName">Plain Mens Stock T-shirt </p>
+                                <span style="display:flex">
+                                    <p class="productPrice">₦8,100.00 </p>
+                                    <p
+                                        style="font-size:14px;font-style: normal;text-decoration-line: line-through;color: #988E8E;position: relative;left:30px">
+                                        ₦4000.00</p>
+                                </span>
+                                <p>
+                                    <strong><i class="fa-solid fa-star" style="color:#F3CF11"></i></strong>
+                                    <strong><i class="fa-solid fa-star" style="color:#F3CF11"></i></strong>
+                                    <strong><i class="fa-solid fa-star" style="color:#F3CF11"></i></strong>
+                                    <strong><i class="fa-solid fa-star" style="color:#F3CF11"></i></strong>
+                                    <strong><i class="bi bi-star"></i></strong>
+                                </p>
+                                <button id="AddCartFunction" class="btn btn-primary  AddCartFunction"><i
+                                        class="bi bi-bag"></i> Add Chart</button>
+                            </div>
+
+                        </div>
+                        <div class="sellers-item" id="recommenditem5">
+                            <picture>
+                                <img src="design image/black men polo.png">
+                            </picture>
+
+                            <div style="margin-top:10px" id="sellers-item-content">
+                                <p class="productName">Mens Winter Jean jacket</p>
+                                <span style="display:flex">
+                                    <p class="productPrice">₦8,100.00
+                                    </p>
+                                    <p
+                                        style="font-size:14px;font-family:'Arial';font-style: normal;text-decoration-line: line-through;color: #988E8E;position: relative;left:30px">
+                                        ₦4000.00</p>
+                                </span>
+                                <p>
+                                    <strong><i class="fa-solid fa-star" style="color:#F3CF11"></i></strong>
+                                    <strong><i class="fa-solid fa-star" style="color:#F3CF11"></i></strong>
+                                    <strong><i class="fa-solid fa-star" style="color:#F3CF11"></i></strong>
+                                    <strong><i class="fa-solid fa-star" style="color:#F3CF11"></i></strong>
+                                    <strong><i class="bi bi-star"></i></strong>
+                                </p>
+                                <button id="AddCartFunction" class="btn btn-primary  AddCartFunction"><i
+                                        class="bi bi-bag"></i> Add Chart</button>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section class="otherservice">
+        <div class="delevery-truck" id="oherservice-item">
+            <i class="bi bi-truck"></i>
+            <span>
+                <h4>Free and save Delevery</h4>
+                <p>For all customers</p>
+            </span>
+
+        </div>
+        <div class="seure-payment" id="oherservice-item">
+            <i class="bi bi-credit-card-2-back"></i>
+            <span>
+                <h4>Secure Payment</h4>
+                <p>We ensure secure payment</p>
+            </span>
+        </div>
+        <div class="money" id="oherservice-item">
+            <i class="bi bi-cash-stack"></i>
+            <span>
+                <h4>Money Back Gurantee</h4>
+                <p>Money back within 30days</p>
+            </span>
+
+        </div>
+        <div class="customerSupport" id="oherservice-item">
+            <i class="bi bi-envelope-paper"></i>
+            <span>
+                <h4>Customer Support</h4>
+                <p>Call or email us anytime</p>
+            </span>
+
+        </div>
+    </section>
+    <section class="new arival">
+
+    </section>
+
+    <section class="contact-us" id="Contact">
+        <div class="row">
+            <div class="col-md-4 col-md-offset-4">
+                <div class="card"
+                    style="background-color:white; border-color:white;padding:30px;position: relative;top:20px;margin: 0 10px">
+                    <div class="card-body">
+                        <h3 style="text-align: center">Get In Touch</h3>
+                        <form action="/">
+                            <input type="text" placeholder="Enter Your Name.." required />
+                            <input type="email" placeholder="Enter Your Email Address.." required />
+                            <input type="text" placeholder="Enter Your Phone Number" required />
+                            <input type="text" placeholder="Message us here.." required class="message">
+                            <button class="btn" style="width:100%;position: relative;left:10px">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section class="footer-newsLetter">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-5 col-lg-6" id="newLetter-statement">
+                    <div>
+                        <i class="bi bi-envelope"></i>
+                    </div>
+                    <div style="position: relative;left:20px;top:10px">
+                        <h4 style="font-weight:550">BE THE FIRST TO KNOW OUR LASTEST OFFFER</h4>
+                        <p style="position: relative; bottom:10px;font-size: inherit;">Our best promotions will be sent
+                            directly to your inbox in no time.</p>
+                    </div>
+
+                </div>
+                <div class="col-xl-7 col-lg-6 col-md-9 mt-4 mt-lg-0 ">
+                    <form>
+                        <input type="text" placeholder="Enter Your Email Address" class=" mr-2 bg-white">
+                        <button type="button">SUBSCRIBE <i class="fa-sharp fa-solid fa-arrow-right"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer">
+        <div class="container">
+            <div class="row">
+                <div style="position:relative;right:70px" class="footer-about">
+                    <h4>ThINGS TO KNOW ABOUT US</h4>
+                    <p>Divas is a reputable an e-commerce clothing shop we offer different </p>
+                    <p>categories of men dress.Which include shirt,trouser,T-shirt,wrist-watch</p>
+                    <div class="Adress">
+                        <p>NO.2 Alha.yinusa Akoka Bariga Lagos</p>
+                        <p>Telephone: +234-9126576061,+234-09092350484</p>
+                    </div>
+                    <div class="social-media">
+                        <div class="facebook">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </div>
+                        <div class="twiter">
+                            <i class="fa-brands fa-twitter"></i>
+                        </div>
+                        <div class="instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </div>
+
+
+                    </div>
+                </div>
+                <div>
+                    <h4>COMPANY</h4>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Recommeded</a></li>
+                        <li><a href="#">Best Seller</a></li>
+                        <li><a href="#">New Arrival</a></li>
+                        <li><a href="#">Contact-Us</a></li>
+                    </ul>
+
+                </div>
+                <div>
+                    <h4>MY Account</h4>
+                    <ul>
+
+                        <li><a href="#">Track My Order</a></li>
+                        <li><a href="#">View Cart</a></li>
+                        <li><a href="#">Sign in</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>CUSTOMER SERVICE</h4>
+                    <ul>
+                        <li><a href="#">Support Center</a></li>
+                        <li><a href="#">Shipping</a></li>
+                        <li><a href="#">Term And Condition</a></li>
+                        <li><a href="#">Become a Distributor</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div><br>
+                <br>
+                <p style="color:#333">Copywrite &copy; 2022 Divas shop. All Right Reserved</p>
+            </div>
+
+    </section>
+    <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
 
 </html>
