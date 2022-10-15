@@ -5,22 +5,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
-        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/regular.min.css"
-        integrity="sha512-EbT6icebNlvxlD4ECiLvPOVBD0uQdt4pHRg8Gpkfirdu9W8l2rtRZO8rThjqeIK08ubcFeiFKHbek7y+lEbWIQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"
-        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/regular.min.css" integrity="sha512-EbT6icebNlvxlD4ECiLvPOVBD0uQdt4pHRg8Gpkfirdu9W8l2rtRZO8rThjqeIK08ubcFeiFKHbek7y+lEbWIQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="stylesheet" href="Index.css">
-    <!--bootbox javascript and bootsrap dependecy-->
     <link rel="stylesheet" href="bootstrap.min.css">
     <title>Divas Shopping </title>
 </head>
 
 <body>
+
+    <!-- site header -->
     <header class="header">
         <div class="content-header">
             <div class="nav">
@@ -30,8 +30,6 @@
                     <path fill-rule="evenodd"
                         d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
                 </svg>
-
-
                 <a href="#" class="logo"><img
                         src="background image/site_logo-removebg-preview2-removebg-preview.png"></a>
                 <div class="Header-content">
@@ -88,16 +86,18 @@
                 <div class="navbar-link">
                     <ul>
                         <li><a class="home" href="#">Home</a></li>
-                        <li><a class="topLink">Top Deal</a></li>
-                        <li><a class="RecommededLink">Recomedation</a></li>
-                        <li><a class="sellerLink">Top best Seller</a></li>
-                        <li><a class="contactLink">Contact us</a></li>
-                        <li><a class="contactCeo">Contact Ceo</a></li>
+                        <li><a href="#men-Collection"class="menCollection">Men Collection</a></li>
+                        <li><a href="#Topsellers" class="topSelller">Top seller</a></li>
+                        <li><a href="#ourBlog" class="ourBlog">Our Blog</a></li>
+                        <li><a href="#news" class="news">News</a></li>
+                        <li><a href="#contactUs"class="contactUs">Contact us</a></li>
+                        <li><a href="mailto: nwubasilas@yahoo.com?subject= Connect with me">Contact Ceo</a></li>
                     </ul>
                     </nav>
             </section>
         </div>
     </header>
+    <!-- site navbar sidebar -->
     <div class="sidebarOverly"></div>
     <section class="sidebar">
         <div class="sidebar-content">
@@ -105,17 +105,19 @@
                 <h5> MAIN MENU</h5>
                 <i class="fa fa-times" id="cancelIcon"></i>
             </div>
-
             <ul>
                 <li><a href="#">Home</a></li>
-                <li><a href="#"> Top Deal</a></li>
-                <li><a href="#">Recomdation</a></li>
-                <li><a href="#">Top Best Seller</a></li>
-                <li><a href="#">Contact Us</a></li>
-                <li><a href="#">Contact Ceo</a></li>
+                <li><a href="#men-Collection">Men Collection</a></li>
+                <li><a href="#Topsellers">Top Seller</a></li>
+                <li><a href="#ourBlog">Our Blog</a></li>
+                <li><a href="#news">News</a></li>
+                <li><a href="#contactUs">Contact Us</a></li>
+                <li><a href="mailto: nwubasilas@yahoo.com?subject= Connect with me">Contact Ceo</a></li>
             </ul>
         </div>
     </section>
+
+    <!-- site cart sidebar -->
     <div class="CartOverly"></div>
     <section class="cart-container">
         <div class="cart-heading">
@@ -129,11 +131,11 @@
         <div class="cart-details">
             <div style="border-bottom:1px solid #EEE;width:85%;margin:0 auto"></div>
             <div class="total" style="display:flex;justify-content:space-around;margin-top: 20px;">
-                <h6 style="font-size:14px;font-weight:600;">Subtotal</h6>
+                <h6 style="font-size:14px;font-weight:600;">Total</h6>
                 <h8 class="subTotalPrice" style="font-weight:600;font-size:16px">₦0.00</h8>
             </div>
             <div class="cart-footer">
-                <button class="viewcart">VIEW CART</button>
+                <a href="viewCart.html"><button class="viewcart">VIEW CART</button></a>
                 <button class="checkout">CHECKOUT</button>
             </div>
         </div>
@@ -144,28 +146,28 @@
             <a href="#"><img src="background image/site background.png"></a>
         </div>
     </section>
-    <br>
+    <br><br>
     <section class="otherservice">
         <div class="otherService-content">
-            <div class="delevery-truck" id="oherservice-item">
+            <div class="delevery-truck" id="otherservice-item">
                 <i class="bi bi-truck"></i>
                 <span>
-                    <h4>Free and save Delevery</h4>
+                    <h3>Free and save Delevery</h3>
                     <p>For all customers</p>
                 </span>
 
             </div>
-            <div class="seure-payment" id="oherservice-item">
+            <div class="seure-payment" id="otherservice-item">
                 <i class="bi bi-credit-card-2-back"></i>
                 <span>
-                    <h4>Secure Payment</h4>
+                    <h3>Secure Payment</h3>
                     <p>We ensure secure payment</p>
                 </span>
             </div>
-            <div class="money" id="oherservice-item">
+            <div class="money" id="otherservice-item">
                 <i class="bi bi-cash-stack"></i>
                 <span>
-                    <h4>Money Back Gurantee</h4>
+                    <h3>Money Back Gurantee</h3>
                     <p>Money back within 30days</p>
                 </span>
 
@@ -173,7 +175,7 @@
             <div class="customerSupport" id="oherservice-item">
                 <i class="bi bi-envelope-paper"></i>
                 <span>
-                    <h4>Customer Support</h4>
+                    <h3>Customer Support</h3>
                     <p>Call or email us anytime</p>
                 </span>
 
@@ -182,547 +184,553 @@
         </div>
 
     </section>
-
     <br><br>
+    <!-- site other service -->
+    <section class="otherservice-image">
+        <div class="otherservice-image-content">
+            <div class="images">
+                <img src="design image/watch-big_2.jpg">
+            </div>
+            <div class="images">
+                <img src="design image/head-phone_2.jpg">
+            </div>
+            <div class="images">
+                <img src="design image/footwear-big_2.jpg">
+            </div>
+            <div class="images">
+                <img src="design image/hatcap_2.jpg">
+            </div>
+        </div>
+
+    </section>
+    <br><br>
+
+    <!-- site men collection -->
     <section class="men-Collection">
-        <div class="container">
-            <br>
-            <h4>Men's Collection</h4>
-            <div class="border-line"></div>
-            <div class="row">
-                <div class="All-item">
-                    <div class="item" id="1">
-                        <picture>
-                            <img src="design image/Men shirt.png" class="productImage">
-                        </picture>
-                        <div style="margin-top:10px" class="item-content">
-                            <p class="productName"> Stock Blue Strip Shirt</p>
-                            <div class="price">
-                                <strong>
-                                    <p class="productPrice">₦14,000</p>
-                                    <p class="Old-Price"> ₦28,000</p>
-                                </strong>
-                            </div>
-                    
-                                <button class="AddCartFunction" style="margin-top:18px"><i class="bi bi-bag"></i> Add to
-                                    Cart</button>
+        <br>
+        <nav class="breadcrumb">
+            <h4>Men's Collection | Design</h4>
+        </nav>
+        <div class="row">
+            <div class="All-item">
+                <div class="item" id="1">
+                    <picture>
+                        <img src="design image/incerun 2 in 1 mens sunset.jpg" class="productImage">
+                    </picture>
+                    <div style="margin-top:10px" class="item-content">
+                        <p class="productName"> 2 in 1 Mens sunset</p>
+                        <div class="price">
+                            <strong>
+                                <p class="productPrice">₦14,000</p>
+                                <p class="Old-Price"> ₦28,000</p>
+                            </strong>
                         </div>
-                    </div>
-                    <div class="item" id="2">
-                        <picture>
-                            <img src="design image/men shirt 2.png" class="productImage">
-                        </picture>
-                        <div style="margin-top:10px" id="item-content">
-                            <p class="productName"> Stock Mens Black Shirt</p>
-                            <span class="price">
-                                <strong>
-                                    <p class="productPrice">₦10,000</p>
-                                    <p class="Old-Price"> ₦20,000</p>
-                                </strong>
-
-                            </span>
-                          
-                            <button class="AddCartFunction" style="margin-top:18px"><i class="bi bi-bag"></i> Add to
-                                Cart</button>
+                        <div class="description">
+                            <p>Sunset 2 in 1 is a light cottton material,it has varity of color touches such as orange,green and black
+                                it is unisex which can worn by woman as well.
+                            </p>
                         </div>
 
-
-                    </div>
-                    <div class="item" id="3">
-                        <picture><img src="design image/Men shirt 3 (2).png" class="productImage"></picture>
-                        <div style="margin-top:10px" id="item-content">
-                            <p class="productName"> Stock Mens Vintage Shirt</p>
-                            <span class="price">
-
-                                <strong>
-                                    <p class="productPrice">₦8,000</p>
-                                    <p class="Old-Price">₦16,000</p>
-                                </strong>
-                            </span>
-                          
-                            <button class="AddCartFunction" style="margin-top:18px"><i class="bi bi-bag"></i> Add to
-                                Cart</button>
-                        </div>
-
-                    </div>
-                    <div class="item" id="4">
-                        <picture><img src="design image/men shirt 4.png" class="productImage"></picture>
-                        <div style="margin-top:10px" id="item-content">
-                            <p class="productName">Mens fitted Jean Shirt</p>
-                            <span class="price">
-                                <strong>
-                                    <p class="productPrice">₦6,000</p>
-                                    <p class="Old-Price">₦12,000</p>
-                                </strong>
-                            </span>
-                            
-                            <button class="AddCartFunction" style="margin-top:18px"><i class="bi bi-bag"></i> Add to
-                                Cart</button>
-                        </div>
-
+                        <button class="AddCartFunction" style="margin-top:18px" data-toggle="modal" data-target="#modelId" >Add to
+                            Cart</button>
                     </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="All-item">
-                    <div class="item" id="5">
-                        <picture>
-                            <img src="design image/black men sneakers.png" class="productImage">
-                        </picture>
-                        <div style="margin-top:10px" class="item-content">
-                            <p class="productName"> Mens Black Sneakers</p>
-                            <span class="price">
-
-                                <strong>
-                                    <p class="productPrice">₦11,600</p>
-                                    <p class="Old-Price">₦20,000</p>
-                                </strong>
-                            </span>
-                           
-                            <button class="AddCartFunction" style="margin-top:18px"><i class="bi bi-bag"></i> Add to
-                                Cart</button>
+                <div class="item" id="2">
+                    <picture>
+                        <img src="design image/mens casual colorful short sleeve.jpg" class="productImage">
+                    </picture>
+                    <div style="margin-top:10px" id="item-content">
+                        <p class="productName">Mens Casual Short Sleeve</p>
+                        <div class="price">
+                            <strong>
+                                <p class="productPrice">₦10,000</p>
+                                <p class="Old-Price"> ₦20,000</p>
+                            </strong>
                         </div>
-                    </div>
-                    <div class="item" id="6">
-                        <picture>
-                            <img src="design image/shoe.png" class="productImage">
-                        </picture>
-                        <div style="margin-top:10px" id="item-content">
-                            <p class="productName">Mens Black Leather Shoe</p>
-                            <span class="price">
-                                <strong>
-                                    <p class="productPrice">₦18,000</p>
-                                    <p class="Old-Price">₦40,000</p>
-                                </strong>
-                            </span>
-                           
-                            <button class="AddCartFunction" style="margin-top:18px"><i class="bi bi-bag"></i> Add to
-                                Cart</button>
-                            </div>
-                    </div>
-                    <div class="item" id="7">
-                       <picture>
-                        <img src="design image/jack.png" class="productImage">
-                       </picture> 
-                        <div style="margin-top:10px" id="item-content">
-                            <p class="productName">Mens Casual Jacket </p>
-                            <span class="price">
-                                <strong>
-                                    <p class="productPrice">₦11,100</p>
-                                    <p class="Old-Price">₦15,000</p>
-                                </strong>
-                            </span>
-                           
-                            <button class="AddCartFunction" style="margin-top:18px"><i class="bi bi-bag"></i> Add to
-                                Cart</button>
+                        <div class="description">
+                            <p> This casual short sleeve cottton material,it has varity of color touches such as yellow,white,blue and white
+                                it very nice shirt perfect for different occasion.
+                            </p>
                         </div>
 
+                        <button class="AddCartFunction" style="margin-top:18px" data-toggle="modal" data-target="#modelId" >Add to
+                            Cart</button>
                     </div>
-                    <div class="item" id="8">
-                        <picture><img src="design image/wrist watch.png" class="productImage"></picture>
-                        <div style="margin-top:10px" id="item-content">
-                            <p class="productName">Mens Leather Watch</p>
-                            <span class="price">
-                                <strong>
-                                    <p class="productPrice">₦11,100</p>
-                                    <p class="Old-Price"> ₦15,000</p>
-                                </strong>
-                            </span>                         
-                            <button class="AddCartFunction" style="margin-top:18px"><i class="bi bi-bag"></i> Add to
-                                Cart</button>
-                        </div>
+                </div>
+                <div class="item" id="3">
+                    <picture><img src="design image/mens short sleeve t-shirt and short set black.jpg"
+                            class="productImage"></picture>
+                    <div style="margin-top:10px" id="item-content">
+                        <p class="productName">Mens Short Sleeve T-shirt</p>
+                        <div class="price">
 
+                            <strong>
+                                <p class="productPrice">₦8,000</p>
+                                <p class="Old-Price">₦16,000</p>
+                            </strong>
+                        </div>
+                        <div class="description">
+                            <p>This is a unque T-shirt and short for men, it is a stock material with perfect design with a very attractive 
+                            color black and white;
+
+                            </p>
+                        </div>
+                        <button class="AddCartFunction" style="margin-top:18px" data-toggle="modal" data-target="#modelId" >Add to
+                            Cart</button>
+                    </div>
+
+                </div>
+                <div class="item" id="4">
+                    <picture><img src="design image/sport causal pant fitness trouser.jpg" class="productImage">
+                    </picture>
+                    <div style="margin-top:10px" id="item-content">
+                        <p class="productName">Sport Causal Fitness Trouser</p>
+                        <div class="price">
+                            <strong>
+                                <p class="productPrice">₦6,000</p>
+                                <p class="Old-Price">₦12,000</p>
+                            </strong>
+                        </div>
+                        <div class="description">
+                            <p>This is sport trouser for sport and it can worn for other occasion, the material is strong
+                                it is unisex which can worn by woman as well.
+                            </p>
+                        </div>
+                        <button class="AddCartFunction" style="margin-top:18px" data-toggle="modal" data-target="#modelId" >Add to
+                            Cart</button>
                     </div>
 
                 </div>
             </div>
         </div>
+        <div class="row">
+            <div class="All-item">
+                <div class="item" id="5">
+                    <picture>
+                        <img src="design image/2 in 1 men short sleeve2.jpg" class="productImage">
+                    </picture>
+                    <div style="margin-top:10px" class="item-content">
+                        <p class="productName">2 in 1 Mens Short Sleeve</p>
+                        <div class="price">
+
+                            <strong>
+                                <p class="productPrice">₦11,600</p>
+                                <p class="Old-Price">₦20,000</p>
+                            </strong>
+                        </div>
+                        <div class="description">
+                            <p>This is a stock 2 in 1 cottton material,it has varity of color black and white,
+                                it can be worn at differnt occassions
+                            </p>
+                        </div>
+                        <button class="AddCartFunction" style="margin-top:18px" data-toggle="modal" data-target="#modelId" >Add to Cart</button>
+                    </div>
+                </div>
+                <div class="item" id="6">
+                    <picture>
+                        <img src="design image/mens all-match leather shoe.jpg" class="productImage">
+                    </picture>
+                    <div style="margin-top:10px" id="item-content">
+                        <p class="productName">Mens All-Match Leather Shoe</p>
+                        <div class="price">
+                            <strong>
+                                <p class="productPrice">₦18,000</p>
+                                <p class="Old-Price">₦40,000</p>
+                            </strong>
+                        </div>
+                        <div class="description">
+                            <p>This leather shoes can match all kind of outfit be it coperate or traditional wear,
+                                 it comes with a strong leather material
+
+                            </p>
+                        </div>
+
+                        <button class="AddCartFunction" style="margin-top:18px" data-toggle="modal" data-target="#modelId" >Add to
+                            Cart</button>
+                    </div>
+                </div>
+                <div class="item" id="7">
+                    <picture>
+                        <img src="design image/2022 mens fashion sneakers.jpg" class="productImage">
+                    </picture>
+                    <div style="margin-top:10px" id="item-content">
+                        <p class="productName">Mens Fashion Sneaker</p>
+                        <div class="price">
+                            <strong>
+                                <p class="productPrice">₦11,100</p>
+                                <p class="Old-Price">₦15,000</p>
+                            </strong>
+                        </div>
+                        <div class="description">
+                            <p>This senaker is hightly made with good material,it has varties of color which include black and light blue,
+                                it can be worn for party and coperate activities;
+                            </p>
+                        </div>
+
+                        <button class="AddCartFunction" style="margin-top:18px"data-toggle="modal" data-target="#modelId">Add to  Cart</button>
+                    </div>
+
+                </div>
+                <div class="item" id="8">
+                    <picture><img src="design image/men wrist watch.jpg" class="productImage"></picture>
+                    <div style="margin-top:10px" id="item-content">
+                        <p class="productName">Mens Leather Watch</p>
+                        <div class="price">
+                            <strong>
+                                <p class="productPrice">₦11,100</p>
+                                <p class="Old-Price"> ₦15,000</p>
+                            </strong>
+                        </div>
+                        <div class="description">
+                            <p>This leather watch is a classic watch for men highly made with strong cover glass with a strong 
+                                leather material.
+                            </p>
+                        </div>
+                        <button class="AddCartFunction" style="margin-top:18px" data-toggle="modal" data-target="#modelId" >Add to Cart</button>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        </div>
+
+    </section>
+
+    <!-- site proceed to cart alert -->
+    <div class="modelOverly"></div>
+    <section class="modalAlert">
+        <div class="modelContent">
+            <span style="display:flex;justify-content:space-between;padding:20px">
+                <h4 style="font-weight:600"> Comfirmation</h4>
+                <i style="cursor: pointer;font-size:25px;font-weight:bold" id="modalCancel">&times;</i>
+            </span>
+            <hr style="position:relative;bottom:40px">
+            <div style="position:relative;bottom:37px">
+                <span>
+                    <h4 style="padding-left:20px">Product has been Added Successfully</h4>
+                </span>
+                <hr style="position:relative;bottom:10px">
+                <div class="modelButton">
+                    <button type="button" class=" btn btn-primary viewCartButton">View Cart</button>
+                    <button type="button" class="btn btn-success CheckoutButton">Checkout</button>
+
+                </div>
+            </div>
         </div>
     </section>
 
-    <div class="toastoverly"></div>
-    <section class="toast-alert">
-        <div class="toast-content">
-            <div>
-                <swal-icon type="success" color="green"> <i class="bi bi-check-lg"></i></swal-icon>
-
-            </div>
-            <div>
-                <h4>Item has added to cart</h4>
-            </div>
-
-        </div>
-    </section>
-    <div class="popup-overlay"></div>
-    <section class="cart-popup">
-    </section>
+  <!-- modal -->
+<section class="myModal">
+    
+ </section>
 
     <section class="call-action">
-        <div class="call-action-header">
-            <a href=""><img src="background image/main-banner1-1903x650.jpg"
-                style="width:100%;margin-top:20px;object-fit: cover;"></a>
+        <div class="call-action-header"style="margin:auto">
+            <a href="#"><img src="background image/Desktop_MLP_slider__1168x384_(Show_Now).jpg"></a>
         </div>
     </section>
-
-    <section class="Topsellers">
-        <div class="TopSeller-content">
-                <h2>TOP BEST SELLER </h2>
-                <div class="border-line"></div>
-                    <div class="all-Seller-item">
-                        <div class="sellers-item" id="15">
-                            <img src="design image/orange polo.png" class="productImage">
-                            <div style="margin-top:10px" id="sellers-item-content">
-                                <div class="seller-detail">
-                                    <p class="productName">Mens Stock T-shirt</p>
-                                    <span style="display:flex;justify-content: space-between;">
-                                        <p>
-                                            <strong><i class="fa-solid fa-star"style="color:#F3CF11;font-weight: bold;"></i></strong>
-                                            <strong><i class="fa-solid fa-star"style="color:#F3CF11;font-weight: bold"></i></strong>
-                                            <strong><i class="fa-solid fa-star"style="color:#F3CF11;font-weight: bold"></i></strong>
-                                            <strong><i class="fa-solid fa-star"style="color:#F3CF11;font-weight: bold"></i></strong>
-                                            <strong><i class="fa-solid fa-star"style="color:#F3CF11;font-weight: bold"></i></strong>
-                                            
-                                        </p>
-                                        <i class="bi bi-cart AddCartFunction" style="font-size:25px;margin-right: 20px;"></i>
-                                    </span>
-                                    <span style="display:flex">
-                                        <strong>
-                                            <p class="productPrice">₦11,000</p>
-                                        </strong>
-                                        <strong>
-                                            <p
-                                                style="font-size:14px;font-family:'Arial';font-style: normal;text-decoration-line: line-through;color: #988E8E;position: relative;left:5px;top:2px">
-                                                ₦12,000</p>
-                                        </strong>
-
-                                    </span>
-                                </div>
-                                <!-- <button id="AddCartFunction" class="AddCartFunction">Add Chart</button> -->
-                            </div>
-
-                        </div>
-                        <div class="sellers-item" id="16">
-                            <img src="design image/black men polo.png" class="productImage">
-                            <div style="margin-top:10px" id="sellers-item-content">
-                                <div class="seller-detail">
-                                    <p class="productName">Mens Classic Stock shirt</p>
-                                    <span>
-                                        <p>
-                                            <strong><i class="fa-solid fa-star"style="color:#F3CF11;font-weight: bold;"></i></strong>
-                                            <strong><i class="fa-solid fa-star"style="color:#F3CF11;font-weight: bold"></i></strong>
-                                            <strong><i class="fa-solid fa-star"style="color:#F3CF11;font-weight: bold"></i></strong>
-                                            <strong><i class="fa-solid fa-star"style="color:#F3CF11;font-weight: bold"></i></strong>
-                                            <strong><i class="fa-solid fa-star"style="color:#F3CF11;font-weight: bold"></i></strong>
-                                            
-                                        </p>
-                                    </span>
-                                    <span style="display:flex">
-                                        <strong>
-                                            <p class="productPrice">₦10,100</p>
-                                        </strong>
-                                        <strong>
-                                            <p
-                                                style="font-size:14px;text-decoration-line: line-through;color: #988E8E;position: relative;left:5px;top:2px">
-                                                ₦12,000</p>
-                                        </strong>
-                                    </span>
-                                </div>
-                                <!-- <button id="AddCartFunction" class="AddCartFunction">Add Chart</button> -->
-                            </div>
-
-                        </div>
-                        <div class="sellers-item" id="17">
-                            <img src="design image/men formal trouser.jpg" class="productImage">
-                            <div style="margin-top:10px" id="sellers-item-content">
-                                <div class="seller-detail">
-                                    <p class="productName">Mens Formal Trouser</p>
-                                    <span>
-                                        <p>
-                                            <strong><i class="fa-solid fa-star"style="color:#F3CF11;font-weight: bold;"></i></strong>
-                                            <strong><i class="fa-solid fa-star"style="color:#F3CF11;font-weight: bold"></i></strong>
-                                            <strong><i class="fa-solid fa-star"style="color:#F3CF11;font-weight: bold"></i></strong>
-                                            <strong><i class="fa-solid fa-star"style="color:#F3CF11;font-weight: bold"></i></strong>
-                                            <strong><i class="fa-solid fa-star"style="color:#F3CF11;font-weight: bold"></i></strong>
-                                            
-                                        </p>
-                                    </span>
-                                    <span style="display:flex">
-                                        <strong>
-                                            <p class="productPrice">₦13,100</p>
-                                        </strong>
-                                        <strong>
-                                            <p
-                                                style="font-size:14px;text-decoration-line: line-through;color: #988E8E;position: relative;left:5px;top:2px">
-                                                ₦15,000</p>
-                                        </strong>
-
-                                    </span>
-                                </div>
-                                <!-- <button id="AddCartFunction" class="AddCartFunction" style="width:97.3%">Add
-                                    Chart</button> -->
-                            </div>
-                        </div>
-                        <div class="sellers-item" id="18">
-                            <img src="design image/men slime fit classic blue jeans.jpg" class="productImage">
-                            <div style="margin-top:10px" id="sellers-item-content">
-                                <div class="seller-detail">
-                                    <p class="productName">Mens Classic Stock Jean</p>
-                                    <span>
-                                        <p>
-                                            <strong><i class="fa-solid fa-star"style="color:#F3CF11;font-weight: bold;"></i></strong>
-                                            <strong><i class="fa-solid fa-star"style="color:#F3CF11;font-weight: bold"></i></strong>
-                                            <strong><i class="fa-solid fa-star"style="color:#F3CF11;font-weight: bold"></i></strong>
-                                            <strong><i class="fa-solid fa-star"style="color:#F3CF11;font-weight: bold"></i></strong>
-                                            <strong><i class="fa-solid fa-star"style="color:#F3CF11;font-weight: bold"></i></strong>
-                                            
-                                        </p>
-                                    </span>
-                                    <span style="display:flex">
-                                        <strong>
-                                            <p class="productPrice">₦9,000</p>
-                                        </strong>
-                                        <strong>
-                                            <p
-                                                style="font-size:14px;font-style: normal;text-decoration-line: line-through;color: #988E8E;position: relative;left:5px;top:2px">
-                                                ₦10,000</p>
-                                        </strong>
-
-                                    </span>
-                                </div>
-                                <!-- <button id="AddCartFunction" class="AddCartFunction">Add Chart</button> -->
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- <section class="blog">
-        <div class="row">
-        <div class="col-md-4">
-            <div class="card">
-                <div class="card-body">
-        
-                </div>
-             </div>
-        </div>
-
-        </div>
-     
-
-
-
-
-    </section> -->
     
-    <!-- <section class="recommended" id="recommended">
-        <div class="recommeded-content">
-            <div class="card" id="recommdation-background">
-                <h2>RECOMENDED FOR YOU </h2>
-                <div class="all-recommend-item">
-                    <div class="recommend-item" id="11">
-                        <img src="design image/flat heel casual shoe.jpg" class="productImage">
-                        <div style="margin-top:10px" id="recommed-item-content">
-                            <p class="productName">Mens Jeans Sneaker Shoe</p>
-                            <span style="display:flex">
-                                <p class="productPrice">₦10,100</p>
-                                <p
-                                    style="font-size:14px;text-decoration-line: line-through;color: #988E8E;position: relative;left:10px;font-weight:bold">
-                                    ₦13,000</p>
-                            </span>
+    <br><br><br>
+    <section class="Topsellers">
+        <nav class="breadcrumb">
+            <h4>TOP BEST SELLER </h4>
+        </nav>
+        <div class="all-Seller-item">
+            <div class="sellers-item" id="15">
+                <picture><img src="design image/quality trendy short nicker for men.jpg" class="productImage"></picture>
+                <div style="margin-top:10px" id="sellers-item-content">
+                    <div class="seller-detail">
+                        <p class="productName"> Quality short nicker for men</p>
+                        <div>
                             <p>
-                                <i class="fa-solid fa-star" style="color:#F3CF11"></i>
-                                <i class="fa-solid fa-star" style="color:#F3CF11"></i>
-                                <i class="fa-solid fa-star" style="color:#F3CF11"></i>
-                                <i class="fa-solid fa-star" style="color:#F3CF11"></i>
-                                <i class="fa-solid fa-star" style="color:#F3CF11"></i>
+                                <strong><i class="fa-solid fa-star"style="color:#F3CF11;font-weight: bold;"></i></strong>
+                                <strong><i class="fa-solid fa-star" style="color:#F3CF11;font-weight: bold"></i></strong>
+                                <strong><i class="fa-solid fa-star" style="color:#F3CF11;font-weight: bold"></i></strong>
+                                <strong><i class="fa-solid fa-star"style="color:#F3CF11;font-weight: bold"></i></strong>
+                                <strong><i class="fa-solid fa-star"style="color:#F3CF11;font-weight: bold"></i></strong>
                             </p>
-                            <button class="AddCartFunction"><i class="bi bi-bag"></i> Add to Cart</button>
+                        </div>
+                        <div style="display:flex;justify-content: space-between;">
+                            <strong>
+                                <p style="font-size:18px;text-decoration-line: line-through;color: #C40F0F;">
+                                    ₦12,000</p>
+                            </strong>
+                            <strong>
+                                <p class="productPrice">₦11,000</p>
+                            </strong>
+                        </div>
+                        <div class="description">
+                            <p>This short is made a nice material for men for casual occasion, it has black and red color design
+                            </p>
                         </div>
 
                     </div>
-                    <div class="recommend-item" id="12">
-                        <img src="background image/cool men shoe.jpg" class="productImage">
-                        <div style="margin-top:10px" id="recommed-item-content">
-                            <p class="productName">Mens Black Fitted Shoe</p>
-                            <span style="display:flex">
-                                <p class="productPrice">₦25,100
-                                </p>
-                                <p
-                                    style="font-size:14px;text-decoration-line: line-through;color: #988E8E;position: relative;left:10px;font-weight:bold">
-                                    ₦30,000</p>
-                            </span>
-                            <p>
+                    <button id="AddCartFunction" class="AddCartFunction" data-toggle="modal" data-target="#modelId" >Add to Cart</button>
+                </div>
 
-                                <strong><i class="fa-solid fa-star" style="color:#F3CF11"></i></strong>
-                                <strong><i class="fa-solid fa-star" style="color:#F3CF11"></i></strong>
-                                <strong><i class="fa-solid fa-star" style="color:#F3CF11"></i></strong>
-                                <strong><i class="fa-solid fa-star" style="color:#F3CF11"></i></strong>
-                                <strong><i class="fa-solid fa-star"
-                                        style="color:#F3CF11;font-weight: bold"></i></strong>
+            </div>
+            <div class="sellers-item" id="16">
+                <picture><img src="design image/white polo t-shirt.jpg" class="productImage"></picture>
+                <div style="margin-top:10px" id="sellers-item-content">
+                    <div class="seller-detail">
+                        <p class="productName">Mens Classic White Stock shirt</p>
+                        <div>
+                            <p>
+                                <strong><i class="fa-solid fa-star"style="color:#F3CF11;font-weight: bold;"></i></strong>
+                                <strong><i class="fa-solid fa-star" style="color:#F3CF11;font-weight: bold"></i></strong>
+                                <strong><i class="fa-solid fa-star" style="color:#F3CF11;font-weight: bold"></i></strong>
+                                <strong><i class="fa-solid fa-star"style="color:#F3CF11;font-weight: bold"></i></strong>
+                                <strong><i class="fa-solid fa-star"style="color:#F3CF11;font-weight: bold"></i></strong>
                             </p>
-                            <button class="AddCartFunction"><i class="bi bi-bag"></i> Add to Cart</button>
                         </div>
 
-                    </div>
-                    <div class="recommend-item" id="13">
+                        <div style="display:flex;justify-content: space-between;">
+                            <strong>
+                                <p style="font-size:18px;text-decoration-line: line-through;color: #C40F0F;">
+                                    ₦12,000</p>
+                            </strong>
+                            <strong>
+                                <p class="productPrice">₦10,000</p>
+                            </strong>
 
-                        <img src="background image/men tshirt.jpg" class="productImage">
-                        <div style="margin-top:10px" id="recommed-item-content">
-                            <p class="productName">Plain Mens Stock T-shirt </p>
-                            <span style="display:flex">
-                                <p class="productPrice">₦7,100</p>
-                                <p
-                                    style="font-size:14px;text-decoration-line: line-through;color: #988E8E;position: relative;left:10px;font-weight:bold">
-                                    ₦8,000</p>
-                            </span>
-                            <p>
-                                <strong><i class="fa-solid fa-star" style="color:#F3CF11"></i></strong>
-                                <strong><i class="fa-solid fa-star" style="color:#F3CF11"></i></strong>
-                                <strong><i class="fa-solid fa-star" style="color:#F3CF11"></i></strong>
-                                <strong><i class="fa-solid fa-star" style="color:#F3CF11"></i></strong>
 
-                            </p>
-                            <button class="AddCartFunction"><i class="bi bi-bag"></i> Add to Cart</button>
                         </div>
-
-                    </div>
-                    <div class="recommend-item" id="14">
-
-                        <img src="design image/winter jacket.jpg" class="productImage">
-                        <div style="margin-top:10px" id="recommed-item-content">
-                            <p class="productName">Mens Winter Jean jacket</p>
-                            <span style="display:flex">
-                                <p class="productPrice">₦20,100
-                                </p>
-                                <p
-                                    style="font-size:14px;text-decoration-line: line-through;color: #988E8E;position: relative;left:10px;font-weight:bold">
-                                    ₦25,000</p>
-                            </span>
-                            <p>
-                                <strong><i class="fa-solid fa-star" style="color:#F3CF11"></i></strong>
-                                <strong><i class="fa-solid fa-star" style="color:#F3CF11"></i></strong>
-                                <strong><i class="fa-solid fa-star" style="color:#F3CF11"></i></strong>
-                                <strong><i class="fa-solid fa-star" style="color:#F3CF11"></i></strong>
-                                <strong><i class="fa-solid fa-star"
-                                        style="color:#F3CF11;font-weight: bold"></i></strong>
+                        <div class="description">
+                            <p>This is a light stock material,it has varity of color touches such as orange and white
                             </p>
-                            <button class="AddCartFunction"><i class="bi bi-bag"></i> Add to Cart</button>
                         </div>
                     </div>
+                    <button id="AddCartFunction" class="AddCartFunction" data-toggle="modal" data-target="#modelId" >Add to Cart</button>
 
                 </div>
+
+            </div>
+            <div class="sellers-item" id="17">
+                <picture><img src="design image/casual demin cool jacket.jpg" class="productImage"></picture>
+                <div style="margin-top:10px" id="sellers-item-content">
+                    <div class="seller-detail">
+                        <p class="productName">Casual Demin Cool Jacket</p>
+                        <div>
+                            <p>
+                                <strong><i class="fa-solid fa-star"style="color:#F3CF11;font-weight: bold;"></i></strong>
+                                <strong><i class="fa-solid fa-star" style="color:#F3CF11;font-weight: bold"></i></strong>
+                                <strong><i class="fa-solid fa-star" style="color:#F3CF11;font-weight: bold"></i></strong>
+                                <strong><i class="fa-solid fa-star"style="color:#F3CF11;font-weight: bold"></i></strong>
+                                <strong><i class="fa-solid fa-star"style="color:#F3CF11;font-weight: bold"></i></strong>
+                            </p>
+                        </div>
+                        <div style="display:flex;justify-content: space-between;">
+                            <strong>
+                                <p style="font-size:18px;text-decoration-line: line-through;color: #C40F0F;">
+                                    ₦15,000</p>
+                            </strong>
+                            <strong>
+                                <p class="productPrice">₦13,000</p>
+                            </strong>
+                        </div>
+                        <div class="description">
+                            <p>This is a very nice yellow jacket for casual occasion and other activitie for  men the material a highly made
+                            </p>
+                        </div>
+
+                    </div>
+                    <button id="AddCartFunction" class="AddCartFunction" data-toggle="modal" data-target="#modelId" >Add To Cart</button>
+                </div>
+            </div>
+            <div class="sellers-item" id="18">
+                <picture><img src="design image/mens vintage shirt patterned.jpg" class="productImage"></picture>
+                <div style="margin-top:10px" id="sellers-item-content">
+                    <div class="seller-detail">
+                        <p class="productName">Mens Vintage shirt Patterned</p>
+                        <div>
+                            <p>
+                                <strong><i class="fa-solid fa-star"style="color:#F3CF11;font-weight: bold;"></i></strong>
+                                <strong><i class="fa-solid fa-star" style="color:#F3CF11;font-weight: bold"></i></strong>
+                                <strong><i class="fa-solid fa-star" style="color:#F3CF11;font-weight: bold"></i></strong>
+                                <strong><i class="fa-solid fa-star"style="color:#F3CF11;font-weight: bold"></i></strong>
+                                <strong><i class="fa-solid fa-star"style="color:#F3CF11;font-weight: bold"></i></strong>
+
+                            </p>
+                        </div>
+                        <div style="display:flex;justify-content: space-between;">
+                            <strong>
+                                <p style="font-size:18px;text-decoration-line: line-through;color: #C40F0F;">
+                                    ₦8,000</p>
+                            </strong>
+                            <strong>
+                                <p class="productPrice">₦6,000</p>
+                            </strong>
+                        </div>
+                        <div class="description">
+                            <p>This is a highly made vintage shirt design with color combination for men,it those not fade after washing
+                                it can be worn is casual occasion and coperate occasion
+                            </p>
+                        </div>
+                    </div>
+                    <button id="AddCartFunction" class="AddCartFunction" data-toggle="modal" data-target="#modelId" >Add to Cart</button>
+                </div>
+
             </div>
         </div>
-
-    </section> -->
-   
-    <br><br>
-    <!-- <section class="contact-us" id="Contact">
-        <div class="row">
-            <div class="col-md-4 col-md-offset-4">
-                <div class="card"
-                    style="background-color:white; border-color:white;padding:30px;position: relative;top:20px;margin: 0 10px">
-                    <div class="card-body">
-                        <h3 style="text-align: center">Get In Touch</h3>
-                        <form action="/">
-                            <input type="text" placeholder="Enter Your Name.." required />
-                            <input type="email" placeholder="Enter Your Email Address.." required />
-                            <input type="text" placeholder="Enter Your Phone Number" required />
-                            <input type="text" placeholder="Message us here.." required class="message">
-                            <button class="btn" style="width:100%;position: relative;left:10px">Submit</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-
+        </div>
+        </div>
         </div>
     </section>
-    <section class="footer-newsLetter">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-5 col-lg-6" id="newLetter-statement">
-                    <div>
-                        <i class="bi bi-envelope"></i>
-                    </div>
-                    <div style="position: relative;left:20px;top:10px">
-                        <h4 style="font-weight:550">BE THE FIRST TO KNOW OUR LASTEST OFFFER</h4>
-                        <p style="position: relative; bottom:10px;font-size: inherit;">Our best promotions will be sent
-                            directly to your inbox in no time.</p>
-                    </div>
+    <br><br><br>
+
+    <!-- site blog -->
+    <article class="blog">
+        <nav class="breadcrumb">
+            <h4 style="width:90%">OUR LATEST NEWS | BLOG</h4>
+        </nav>
+        <div class="blog-content">
+            <div class="blog-item">
+                <picture><img src="design image/IMG-20221015-WA0011.jpg"></picture>
+                <div class="blog-detail">
+                    <p class="date"> <i class="bi bi-calendar"></i> Weds,Sept 14,22</p>
+                    <h4>3 Way my style has envolved</h4>
+                    <span style="position:relative;top:5px">
+                        <p class="date"><i class="bi bi-person"></i> Nwuba Silas Admin</p>
+                        <span>
+                            <p>Dressing unque make me glow, the product is highly design ,i have a party next month i'm coming to divas shop right way to buy material</p>
+        
+                        </span>
+                    </span>
+
 
                 </div>
-                <div class="col-xl-7 col-lg-6 col-md-9 mt-4 mt-lg-0 ">
-                    <form>
-                        <input type="text" placeholder="Enter Your Email Address" class=" mr-2 bg-white">
-                        <button type="button">SUBSCRIBE <i class="fa-sharp fa-solid fa-arrow-right"></i></button>
+            </div>
+            <div class="blog-item">
+                <picture><img src="design image/IMG-20221015-WA0014.jpg"></picture>
+                <div class="blog-detail">
+                    <p class="date"> <i class="bi bi-calendar"></i> Thur,oct 06,22</p>
+                    <h4>way to appear nice to a party</h4>
+                    <span style="position:relative;top:5px">
+                        <p class="date"><i class="bi bi-person"></i> Nwuba Silas Admin</p>
+                        <span>
+                            <p>Patronnize divas and get quality designer,the product is highly design, 2 in 1 is also available, be our guest</p>
+                          
+                        </span>
+                    </span>
+                </div>
+            </div>
+            <div class="blog-item">
+                <picture><img src="/design image/IMG-20221015-WA0012.jpg"></picture>
+                <div class="blog-detail">
+                    <p class="date"><i class="bi bi-calendar"></i> Weds,Aug 24,22</p>
+                    <h4>best collection to look at for</h4>
+                    <span style="position:relative;top:5px">
+                        <p class="date"><i class="bi bi-person"></i> Nwuba Silas Admin</p>
+                        <span>
+                            <p>Look good and live good divas got your back on quality outfit for occasion and party, connect with us for this cloth</p>
+                           
+                        </span>
+                    </span>
+
+                </div>
+            </div>
+        </div>
+
+        </div>
+    </article>
+
+    <!-- site news letter -->
+    <div class="footer-newletter mb-4">
+        <div class="container">
+            <div class="row justify-content-center align-item-center">
+                <div class="col-xl-5 col-lg-6">
+                    <span>
+                        <h4 style="font-weight:bold">BE THE FIRST TO KNOW OUR LASTEST OFFFER</h4>
+                        <p class="text-white">Our best promotions will be sent directly to your inbox in no time.</p>
+                    </span>
+
+                </div>
+                <div class="col-xl-7 col-lg-6 col-md-9 mt-4 mt-lg-0">
+                    <form method="get" action="/" class="input-wrapper-newsletter">
+                        <input type="text" placeholder="Email Address" required>
+                        <button type="submit">Subscribe</button>
                     </form>
                 </div>
             </div>
         </div>
-    </section> -->
-<br><br>
+    </div>
+    <!-- site contact us -->
+    <section class="contact-us">
+        <div class="contactContainer">
+            <div class="contact-form">
+                <div class="contact-content">
+                    <form method="get" action="/">
+                        <input type="text" placeholder="Enter Name" required>
+                        <input type="text" placeholder="Enter Your Email" required>
+                        <input type="text" placeholder="Enter Your Subjuct" required>
+                        <input type="text" placeholder="Enter Your Message..." required class="InputMessage">
+                        <button type="submit">send here</button>
+                    </form>
+                </div>
+            </div>
+            <div class="contact-address">
+                <div class="location">
+                    <br>
+                    <h4>LOCATION</h4>
+
+                    <div class="location-details">
+                        <div>
+                            <i class="fa-solid fa-location-dot"></i>
+                            <p> N0 2 alahji yinusa bariga Lagos</p>
+                        </div>
+
+                        <div>
+                            <i class="fa-solid fa-phone"></i>
+                            <p> 09126576061</p>
+                        </div>
+
+                        <div>
+                            <i class="fa-solid fa-envelope"></i>
+                            <p> info@divas.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bussinessHour">
+                    <h4>BUSINESS HOURS</h4>
+                    <div class="bussiness-details">
+                        <i class="fa-solid fa-clock"></i>
+
+                        <div>
+                            <p>
+                                Monday - Friday - 9am to 5pm<br>
+                                Saturday & Sunday - 9am to 1pm
+
+                            </p>
+                            <p>
+                                Note: All Commercial Holidays are Applicable<br> 24 x 7 Live Customer Support Available
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+
+    </section>
+    <!-- site footer -->
     <section class="footer">
         <div class="container">
-            <div class="row">
-                <div style="position:relative;right:70px" class="footer-about">
-                    <h4>ThINGS TO KNOW ABOUT US</h4>
-                    <p>Divas is a reputable an e-commerce clothing shop we offer different </p>
-                    <p>categories of men dress.Which include shirt,trouser,T-shirt,wrist-watch</p>
-                    <div class="Adress">
-                        <p>NO.2 Alha.yinusa Akoka Bariga Lagos</p>
-                        <p>Telephone: +234-9126576061,+234-09092350484</p>
-                    </div>
-                    <div class="social-media">
-                        <div class="facebook">
-                            <i class="fa-brands fa-facebook-f"></i>
-                        </div>
-                        <div class="twiter">
-                            <i class="fa-brands fa-twitter"></i>
-                        </div>
-                        <div class="instagram">
-                            <i class="fa-brands fa-instagram"></i>
-                        </div>
-
-
-                    </div>
-                </div>
-                <div>
-                    <h4>COMPANY</h4>
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Recommeded</a></li>
-                        <li><a href="#">Best Seller</a></li>
-                        <li><a href="#">New Arrival</a></li>
-                        <li><a href="#">Contact-Us</a></li>
-                    </ul>
-
-                </div>
-                <div>
-                    <h4>MY ACCOUNT</h4>
-                    <ul>
-
-                        <li><a href="#">Track My Order</a></li>
-                        <li><a href="#">View Cart</a></li>
-                        <li><a href="#">Sign in</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4>CUSTOMER SERVICE</h4>
-                    <ul>
-                        <li><a href="#">Support Center</a></li>
-                        <li><a href="#">Shipping</a></li>
-                        <li><a href="#">Term And Condition</a></li>
-                        <li><a href="#">Become a Distributor</a></li>
-                    </ul>
-                </div>
+          <div class="footer-content">
+            <div class="modeOfPayment">
+                <p>Mode of Payment</p>
+                <i class="fa fa-cc-mastercard" aria-hidden="true"></i>
+                <i class="fa-brands fa-cc-visa"></i>
             </div>
-            <div><br>
-                <br>
-                <p style="color:#eee">Copywrite &copy; 2022 develope by Silas Nwuba</p>
+            <div class="copyright">
+                <p style="color:black">Copywrite &copy; 2022 Develope by Silas Nwuba</p>
+
             </div>
+        
+        </div>
+            
 
     </section>
     <script src="index.js"></script>
