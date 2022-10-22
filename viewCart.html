@@ -4,9 +4,92 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <title>Divas Viewcart</title>
+    <link rel="stylesheet" href="/viewCart.css">
 </head>
 <body>
-    
+    <header>
+        <h4>View Cart</h4>
+        <span class="showIcon">
+            <i class="bi bi-bag" style="font-size:30px"></i>
+            <span class="showCart"></span>
+        </span>
+    </header>
+     <!-- site cart sidebar -->
+     <div class="CartOverly"></div>
+     <section class="showCart-container">
+         <div class="cart-heading">
+             <h5 style="font-size:16px">SHOPPING CART</h5>
+             <a href="#" id="closeCart">Close <i class="bi bi-arrow-right"></i></a>
+         </div>
+         <div style="border-bottom:1px solid #eee;width:85%;margin:0 auto;position: relative;bottom:20px"></div>
+         <h4 style="font-size:16px;position: relative;left:30px" class="emptyCartMessage">No product in the cart</h4>
+         <div class="cart-display"></div>
+         <br>
+         <div class="cart-details">
+             <div style="border-bottom:1px solid #EEE;width:85%;margin:0 auto"></div>
+             <div class="total" style="display:flex;justify-content:space-around;margin-top: 20px;">
+                 <h6 style="font-size:14px;font-weight:600;">Total</h6>
+                 <h8 class="subTotalPrice" style="font-weight:600;font-size:16px">₦0.00</h8>
+             </div>
+             <div class="cart-footer">
+                 <a href="viewCart.html"><button class="viewcart">VIEW CART</button></a>
+                 <button class="checkout">CHECKOUT</button>
+             </div>
+         </div>
+     </section>
+     <section class="cart-content">
+        <div clas="row">
+            <div class="col-xl-4 col-md-8">
+                <nav class="breadcrumb">
+                    <span class="breadcrumb-item">
+                        Shopping Cart
+                    </span>
+                </nav>
+                <div class="cart-all-container">
+                </div>
+              
+                <div class="cart-content-footer">
+                    <a href="Index.html"><button type="button" class="btn btn-primary">Continue Shopping</button></a> 
+                    <button type="button" class="btn btn-warning">Clear Cart</button>
+                </div>
+           </div>
+            <div class="col-xl-4 col-md-4">
+                <div class="cart-summary">
+                    <div class="cart-summary-content">
+                        <span style=" font-weight:600; font-size:14px;padding:10px;position: relative;top:10px">CART SUMMARY</span>
+                        <hr>
+                        <div class="cart-details">
+                            <span>
+                                <p>Item Total (0)</p>
+                                <strong>₦ 0.00</strong>
+                            </span>
+                            <span>
+                                <p>Shipping Fees</p>
+                                <strong>₦ 0.00</strong>
+                            </span>
+                            <hr>
+                            <span>
+                                <p style="font-weight: 600">Total</p>
+                                <strong>₦0</strong>
+                            </span>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-primary">Proceed To checkout</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="viewCart.js"></script>
 </body>
 </html>
+
+
+
+
+
+
+

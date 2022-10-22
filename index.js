@@ -182,7 +182,7 @@ class Cart{
   this.productQuantity = productQuantity;
  }
 }
-class LocalCart{
+ class LocalCart{
   static key = "localItem";
   static getLocalItemFromCart(){
     let cartMap = new Map();
@@ -207,7 +207,6 @@ class LocalCart{
       localStorage.setItem(LocalCart.key, JSON.stringify(Object.fromEntries(cartItem)));
       alertModalFunction()
       updateCartUi();
-     
     }
   };
   static removeItemFromLocalCart(id){
@@ -300,7 +299,7 @@ try {
                               <hr>
                               
                               <div class="modal-footter">
-                                  <div class="quality">
+                                  <div class="quantity">
                                       <button type="button"class="decreasement"onclick="decrement()">-</button>
                                     <input type="text" value="1"class="quantityInput">
                                      <button type="button" class="increasement"onclick="increment()">+</button>
