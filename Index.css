@@ -814,9 +814,7 @@ color:white;
     border:none;
     font-size:18px
 }
-.modalAlert .viewCartButton:hover{
-    background-color:rgb(163, 157, 157);
-}
+
 .modalAlert #modalCancel{
     cursor: pointer;
 }
@@ -1445,4 +1443,10 @@ color:white;
         margin: 10px;
     }
 }
-
+@media (min-width:992px) and (max-width:1115px){
+    .otherservice .otherService-content{
+        grid-template-columns: repeat(3,1fr);
+       margin: auto;
+        width: 90%;
+    }
+}

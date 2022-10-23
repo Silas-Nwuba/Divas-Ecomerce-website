@@ -44,6 +44,7 @@ class LocalCart {
       mapItem.productQuantity = updateQuantity;
       getCartId.set(id, mapItem);
       localStorage.setItem(LocalCart.key, JSON.stringify(Object.fromEntries(getCartId)));
+      updateCartUi()
 
     }
   }
@@ -58,6 +59,7 @@ class LocalCart {
         mapItem.productQuantity = updateQuantity;
         getCartId.set(id, mapItem);
         localStorage.setItem(LocalCart.key, JSON.stringify(Object.fromEntries(getCartId)));
+        updateCartUi()
 
       }
 
@@ -75,10 +77,17 @@ class LocalCart {
     else{
       localStorage.setItem(LocalCart.key, JSON.stringify(Object.fromEntries(removeItem)));
      updateCartUi();
-     displayProductDetails() 
+     
+
     }
 
   }
+  static clearCart(){
+  const clearcart = LocalCart.getLocalItemFromCart("localItem");
+  if(clearcart != null || clearcart.length > 0){
+  localStorage.clear();
+  }
+}
 }
 function updateCartUi() {
   const cartItem = LocalCart.getLocalItemFromCart("localItem");
@@ -115,6 +124,8 @@ function updateCartUi() {
 `
     displayCart.getElementsByClassName("bi-x-lg")[0].addEventListener("click", () => {
       LocalCart.removeItemFromLocalCart(key);
+      window.location.reload();
+   
     })
     showCartItem.append(displayCart);
 
@@ -138,17 +149,25 @@ function updateCartUi() {
     emptyCartMessage.style.display = "block";
   }
 }
-
-
 function displayProductDetails() {
   const getLocalItem = LocalCart.getLocalItemFromCart("localItem");
+  if(getLocalItem == null)return;
+  let count = 0;
+  let priceTotal;
+  let grandTotal = 0;
+  let sumGrandTotal;
   for (const [key, value] of getLocalItem.entries()) {
+    count +=1;
     const item = document.createElement("div");
     item.classList.add("cart-container");
     const itemParentElement = document.querySelector(".cart-all-container");
     const price = Math.round(value.productPrice.replace(",", "") * 100) / 100;
     let total = parseInt(value.productQuantity) * parseInt(price);
-    total = total.toLocaleString();
+    grandTotal += total;
+    priceTotal = total.toLocaleString();
+    sumGrandTotal = grandTotal.toLocaleString();
+
+    
     item.innerHTML = ` <div class="all-item">
     <img src="${value.productImage}">
     <div class="product-Detail">
@@ -166,14 +185,24 @@ function displayProductDetails() {
         </div>
  
         <div class="totalPrice">
-            <strong>₦${total}</strong>
+            <strong>₦${priceTotal}</strong>
         </div>
         <div class="deleteIcon">
             <i class="bi bi-x-lg"></i>
         </div>
     </div>
  </div>`
+
     itemParentElement.append(item);
+    item.getElementsByClassName("bi-x-lg")[0].addEventListener("click",(event)=>{
+      LocalCart.removeItemFromLocalCart(key);
+      const getItemParent = event.target;
+      const getitem = getItemParent.parentElement.parentElement.parentElement.parentElement;
+      getitem.remove();
+      window.location.reload();
+    });
+
+
     const increasement = document.getElementsByClassName("increasement");
     for (let index = 0; index < increasement.length; index++) {
       increasement[index].addEventListener("click", increasementFunction);
@@ -183,7 +212,15 @@ function displayProductDetails() {
       decreasement[index].addEventListener("click", decreasementFunction);
     }
   }
-
+  if (count > 0) {
+    const grandTotalPrice = document.getElementsByClassName("grandTotalPrice")[0];
+    grandTotalPrice.innerHTML = `₦${sumGrandTotal}`;
+    const breadcrumbitem = document.getElementsByClassName("breadcrumb-item")[0];
+    breadcrumbitem.innerHTML = 'Shopping Cart';
+  }
+  else{
+    
+  }
 }
 // quality  
 function increasementFunction(event) {
@@ -196,7 +233,9 @@ function increasementFunction(event) {
   let totalPrice = parseInt(price) * parseInt(InputValue.value);
   totalPrice = totalPrice.toLocaleString();
   let totalSum = qualityParentElement.getElementsByClassName("totalPrice")[0];
-  totalSum.innerHTML = `₦${totalPrice}`
+  totalSum.innerHTML = `₦${totalPrice}`;
+  window.location.reload();
+  
 }
 function decreasementFunction(event) {
   const qualityParentElement = event.target.parentElement.parentElement;
@@ -212,14 +251,19 @@ function decreasementFunction(event) {
     let totalPrice = parseInt(price) * parseInt(InputValue.value);
     totalPrice = totalPrice.toLocaleString();
     let totalSum = qualityParentElement.getElementsByClassName("totalPrice")[0];
-    totalSum.innerHTML = `₦${totalPrice}`
+    totalSum.innerHTML = `₦${totalPrice}`;
+    window.location.reload();
   }
-
-
-
-
-
 }
+//clear localstorage
+const btnwarning = document.getElementsByClassName("btn-warning")[0];
+btnwarning.addEventListener("click",(event)=>{
+if(event.target){
+  LocalCart.clearCart();
+  window.location.reload();
+}
+})
+
 document.addEventListener("DOMContentLoaded", () => {
   displayProductDetails();
   updateCartUi();

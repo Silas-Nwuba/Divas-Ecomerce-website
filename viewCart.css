@@ -246,6 +246,10 @@ color:var(--darkred)
 background-color: black;
 color:white;
 }
+.cart-content-footer .btn-primary:focus{
+    background-color: #0796f5e3;
+    border-color: #0796f5e3;
+}
 .cart-content-footer .btn-warning{
     color:white;
 }
@@ -305,7 +309,7 @@ font-size: 16px;
 .cart-summary .btn-primary{
 background-color: var(--darkyellow);
 border:none;
-width:96%;
+width:94%;
 margin:10px;
 font-size:16px;
 font-weight: 600;
