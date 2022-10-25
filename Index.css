@@ -632,6 +632,7 @@ width:100%;
     margin: auto;
     display: block;
     font-weight: 600;
+    margin-bottom: 15px;
 }
 .item .productName {
     font-size: 15px;
