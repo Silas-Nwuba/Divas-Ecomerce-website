@@ -225,6 +225,8 @@ class Cart{
 
   }
 }
+ 
+//add to cart modal
 try {
   let temp = [];
   const addcartButton = [...document.getElementsByClassName("AddCartFunction")];
@@ -251,10 +253,10 @@ try {
         }
         temp.push(cartObject);
         temp.forEach(data =>{
-          const myModal = document.querySelector(".myModal");
-          const modal = document.createElement("div");
-       modal.classList.add("modelId");
-      modal.innerHTML = `
+          const myModals = document.querySelector(".myModal");
+          const modals = document.createElement("div");
+       modals.classList.add("modelId");
+      modals.innerHTML = `
       <div class="modal fade" id="modelId" tabindex="-1" aria-labelledby="modelTitleId" aria-hidden="true" data-backdrop="static"data-keyboard="false">
           <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
               <div class="modal-content">
@@ -320,7 +322,7 @@ try {
               </div>
           </div>
       </div>`
-      myModal .append(modal);
+      myModals.append(modals);
       document.body.style.overflowY = "hidden";
       const closeModal = document.getElementsByClassName("closeModal");
       for (let index = 0; index < closeModal.length; index++) {

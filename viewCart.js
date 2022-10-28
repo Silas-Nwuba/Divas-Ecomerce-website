@@ -166,8 +166,6 @@ function displayProductDetails() {
     grandTotal += total;
     priceTotal = total.toLocaleString();
     sumGrandTotal = grandTotal.toLocaleString();
-
-    
     item.innerHTML = ` <div class="all-item">
     <img src="${value.productImage}">
     <div class="product-Detail">

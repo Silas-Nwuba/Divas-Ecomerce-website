@@ -91,33 +91,17 @@ body {
 .search-content select option {
     text-align: left;
 }
-
-.searchdetails {
-    float: left;
-    border: 1px solid #362e2e5e;
-    width: 60px;
-    height: 40px;
-    cursor: pointer;
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
-    ;
-}
-
-.searchdetails option {
-    cursor: pointer;
-}
-
-.searchdetails:focus {
-    outline: none;
-}
-
 .inputsearch {
     float: left;
     position: relative;
     height: 40px;
     border: 1px solid #362e2e5e;
     width: 100%;
+    padding:0.85rem 1.5rem;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
 }
+
 
 .inputsearch:focus {
     outline: none;
@@ -348,7 +332,7 @@ body {
     z-index: 2499;
     opacity: 1;
     display: none;
-    background-color: rgba(0, 0, 0,0.3);
+    background-color: rgba(0, 0, 0,0.50);
 }
 .cart-container {
     background-color: white;
@@ -528,7 +512,10 @@ body {
 .otherservice-image-content img{
     width:100%;
 }
-.images:hover{
+.images-item{
+    display: none;
+}
+.images img:hover{
     width:100%;
     padding:2px;
     transition: all ease;
@@ -835,10 +822,10 @@ color:white;
     margin-top:40px;
     margin: auto;
 }
-.sellers-item .description{
+.all-Seller-item .item .description{
     display: none;
 }
-.sellers-item {
+.all-Seller-item .item {
     transition: 0.5s ease-in-out;
     background-color: white;
     box-shadow:  0px 4px 4px rgba(0, 0, 0, 0.20);
@@ -853,40 +840,37 @@ color:white;
     gap:15px;
     margin: auto;
 }
-.sellers-item #AddCartFunction {
-    outline: none;
-    font-size: 16px;
+.all-Seller-item .item  .AddCartFunction {
     border: none;
     background-color: var(--darkyellow);
-    width:93%;
-    height: 50px;
+    padding: 15px;
     color: white;
-    font-weight: 600;
-    cursor: pointer;
-    margin: 0 10px 10px 10px;
     border-radius: 5px;
+    margin: auto;
     text-transform: uppercase;
+    display: block;
+    font-weight: 600;
+    margin-bottom: 15px;
 }
-.sellers-item #AddCartFunction:hover{
+.all-Seller-item .item .AddCartFunction:hover{
     background-color: var(--darkred);
     transition: 0.5s ease;
 }
-.sellers-item strong {
-    font-size: 12px;
+.all-Seller-item .item .productName {
+    font-size: 15px;
+    text-align: center;
+    font-family: 'Poppins, sans-serif';
 }
-
-#sellers-item-content .productName {
-    font-size: 14px;
-    font-weight: 700;
-}
-.seller-detail {
-    margin-left: 10px;
+.all-Seller-item .Old-Price{
+    text-decoration-line: line-through;
+    color: #988E8E
 }
 .all-Seller-item .productPrice{
-    font-size: 18px;
-    position: relative;
-    right:15px;
+    color:var(--darkred);
 }
+
+
+/* blog section */
 .blog{
     width:90%;
     margin: auto;
@@ -1127,6 +1111,8 @@ color:white;
 
     .inputsearch {
         width: 90%;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
     }
 
     .search-text {
@@ -1209,7 +1195,7 @@ color:white;
         grid-template-columns: repeat(4,1fr);
         width:100%;
     }
-    .images:hover{
+    .images img:hover{
         padding: 0%;
     }
     .all-Seller-item{
@@ -1262,12 +1248,12 @@ color:white;
 
     .inputsearchbtn {
         min-width: 60px;
-        border-top-right-radius: 0;
-        border-bottom-right-radius: 0;
+      
     }
 
     .inputsearch {
         width: 90%;
+     
     }
 
     .search-text {
@@ -1311,11 +1297,6 @@ color:white;
         bottom: 5px;
         
     }
-
-    .searchdetails {
-        display: none;
-    }
-
     .cart-show {
         position: relative;
         left: 20px;
