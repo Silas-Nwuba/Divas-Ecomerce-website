@@ -357,33 +357,27 @@ function decrement() {
     InputValue.value = 1;
   }
 }
-
 //Procedd to cart
-try {
-  function proceedToCart(event) {
-    const btn =
-      event.target.parentElement.parentElement.parentElement.parentElement;
-    const id = btn.getElementsByClassName('productId')[0].innerHTML;
-    const productImage = btn.getElementsByClassName('bigImage')[0].src;
-    const productName = btn.getElementsByClassName('productName')[0].innerHTML;
-    const productPrice = btn
-      .getElementsByClassName('productPrice')[0]
-      .innerHTML.replace('₦', '');
-    const productQuantity =
-      btn.getElementsByClassName('quantityInput')[0].value;
+function proceedToCart(event) {
+  const btn =
+    event.target.parentElement.parentElement.parentElement.parentElement;
+  const id = btn.getElementsByClassName('productId')[0].innerHTML;
+  const productImage = btn.getElementsByClassName('bigImage')[0].src;
+  const productName = btn.getElementsByClassName('productName')[0].innerHTML;
+  const productPrice = btn
+    .getElementsByClassName('productPrice')[0]
+    .innerHTML.replace('₦', '');
+  const productQuantity = btn.getElementsByClassName('quantityInput')[0].value;
 
-    //this one add the item to local storage
-    const item = new Cart(
-      productImage,
-      productName,
-      productPrice,
-      productQuantity
-    );
-    LocalCart.addToLocalCart(id, item);
-    alertModalFunction();
-  }
-} catch (error) {
-  console.log(error);
+  //this one add the item to local storage
+  const item = new Cart(
+    productImage,
+    productName,
+    productPrice,
+    productQuantity
+  );
+  LocalCart.addToLocalCart(id, item);
+  alertModalFunction();
 }
 function alertModalFunction() {
   const modalAlert = document.querySelector('.modalAlert');
