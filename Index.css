@@ -1155,6 +1155,7 @@ picture img {
     margin-top: 10px;
     margin: auto;
     width: 90%;
+    transition: transform 1s;
   }
   .otherservice .otherService-content {
     grid-template-columns: repeat(2, 1fr);

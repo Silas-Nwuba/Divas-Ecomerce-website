@@ -45,9 +45,14 @@ try {
 }
 //navbar Scroll
 const menCollection = document.getElementsByClassName('menCollection')[0];
-menCollection.addEventListener('click', () => {
-  console.log('hello world');
-  window.scrollTo({ top: 960, behavior: 'smooth' });
+menCollection.addEventListener('click', (e) => {
+  if (e.target) {
+    window.scrollTo({
+      left: 0,
+      top: 880,
+      behavior: 'smooth',
+    });
+  }
 });
 const topSelller = document.getElementsByClassName('topSelller')[0];
 topSelller.addEventListener('click', () => {
@@ -97,7 +102,6 @@ for (let index = 0; index < scrollSidebarNav.length; index++) {
     const sidebar = document.querySelector('.sidebar');
     sidebar.style.left = '-500px';
     if (index === 1) {
-      console.log('working');
       document.body.scrollTo({ top: 1200, behavior: 'smooth' });
     } else if (index == 2) {
       document.body.scrollTo({ top: 5565, behavior: 'smooth' });
@@ -337,10 +341,8 @@ try {
         document.body.style.overflowY = 'visible';
       }
     }
-    const proceedBtn = document.getElementsByClassName('proceedCart');
-    for (let index = 0; index < proceedBtn.length; index++) {
-      proceedBtn[index].addEventListener('click', proceedToCart);
-    }
+    const proceedBtn = document.querySelector('.proceedCart');
+    proceedBtn.addEventListener('click', proceedToCart);
   }
 } catch (error) {
   console.log(error);
@@ -348,11 +350,11 @@ try {
 
 function increment() {
   let InputValue = document.getElementsByClassName('quantityInput')[0];
-  InputValue.value = parseInt(InputValue.value) + 1;
+  InputValue.value = Number.parseInt(InputValue.value) + 1;
 }
 function decrement() {
   let InputValue = document.getElementsByClassName('quantityInput')[0];
-  InputValue.value = parseInt(InputValue.value) - 1;
+  InputValue.value = Number.parseInt(InputValue.value) - 1;
   if (isNaN(InputValue.value) || InputValue.value == 0) {
     InputValue.value = 1;
   }
