@@ -188,7 +188,8 @@ class LocalCart {
     if (cartItem.has(id)) {
       let mapItem = cartItem.get(id);
       let quantity =
-        parseInt(mapItem.productQuantity) + parseInt(item.productQuantity);
+        Number.parseInt(mapItem.productQuantity) +
+        Number.parseInt(item.productQuantity);
       let convertToString = quantity.toString();
       mapItem.productQuantity = convertToString;
       cartItem.set(id, mapItem);
@@ -322,16 +323,14 @@ try {
               </div>
           </div>
       </div>`;
-      myModals.append(modals);
+      myModals.insertAdjacentElement('afterbegin', modals);
       document.body.style.overflowY = 'hidden';
-      const closeModal = document.getElementsByClassName('closeModal');
-      for (let index = 0; index < closeModal.length; index++) {
-        closeModal[index].addEventListener('click', closeModalFunction);
-      }
+      const closeModal = document.querySelector('.closeModal');
+      closeModal.addEventListener('click', closeModalFunction);
     });
-    function closeModalFunction(event) {
-      const target = event.target;
-      if (target) {
+
+    function closeModalFunction(e) {
+      if (e.target) {
         const modalDiv =
           target.parentElement.parentElement.parentElement.parentElement;
         modalDiv.remove();
@@ -341,6 +340,12 @@ try {
         document.body.style.overflowY = 'visible';
       }
     }
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Ecaspe') {
+        closeModalFunction();
+      }
+    });
+
     const proceedBtn = document.querySelector('.proceedCart');
     proceedBtn.addEventListener('click', proceedToCart);
   }
@@ -355,7 +360,7 @@ function increment() {
 function decrement() {
   let InputValue = document.getElementsByClassName('quantityInput')[0];
   InputValue.value = Number.parseInt(InputValue.value) - 1;
-  if (isNaN(InputValue.value) || InputValue.value == 0) {
+  if (isNaN(InputValue.value) || InputValue.value === 0) {
     InputValue.value = 1;
   }
 }
@@ -452,7 +457,7 @@ function updateCartUi() {
       .addEventListener('click', () => {
         LocalCart.removeItemFromLocalCart(key);
       });
-    showCartItem.append(displayCart);
+    showCartItem.insertAdjacentElement('afterbegin', displayCart);
   }
   if (count > 0) {
     const showCartIcon = document.querySelector(':root');
