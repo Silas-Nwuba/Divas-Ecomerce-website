@@ -330,21 +330,14 @@ try {
     });
 
     function closeModalFunction(e) {
-      if (e.target) {
-        const modalDiv =
-          target.parentElement.parentElement.parentElement.parentElement;
-        modalDiv.remove();
-        temp = [];
-        const backdrop = document.querySelector('.modal-backdrop');
-        backdrop.remove();
-        document.body.style.overflowY = 'visible';
-      }
+      const modalDiv =
+        e.target.parentElement.parentElement.parentElement.parentElement;
+      modalDiv.remove();
+      temp = [];
+      const backdrop = document.querySelector('.modal-backdrop');
+      backdrop.remove();
+      document.body.style.overflowY = 'visible';
     }
-    document.addEventListener('keydown', (e) => {
-      if (e.key === 'Ecaspe') {
-        closeModalFunction();
-      }
-    });
 
     const proceedBtn = document.querySelector('.proceedCart');
     proceedBtn.addEventListener('click', proceedToCart);
